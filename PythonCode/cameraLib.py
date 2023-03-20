@@ -1,16 +1,18 @@
 import cv2
 from keras.models import load_model
 import numpy as np
+import os
 import time
 
 print("Getting camera\s")
 camera1 = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-camera2 = cv2.VideoCapture(1, cv2.CAP_DSHOW)
+camera2 = cv2.VideoCapture(2, cv2.CAP_DSHOW)
 
 print("Finished getting camera")
 
 print("Loading model")
-model = load_model("model/keras_model.h5")
+os.chdir("PythonCode")
+model = load_model(os.getcwd()+ "\model\keras_model.h5")
 print("Model loaded")
 
 print("Loading class names")
@@ -20,10 +22,7 @@ with open("model/labels.txt", "r") as f:
         class_names[class_names.index(class_name)] = class_name.split(" ")[1][:-1]
 print("Class names loaded: ", class_names)
 
-print("starting")
-font = cv2.FONT_ITALIC
-fps = 0
-kernel = np.zeros((420, 640, 3), np.uint8)
+print(f"Everithing loaded \nCamera1: {camera1.read()[0]} \nCamera2: {camera2.read()[0]}")
 
 
 def getColors(frame, threshb=127, threshg=100, threshr=127, maxVal=255):
@@ -66,7 +65,9 @@ def recognize(model, frame, class_names) -> str:
     return class_names[prediction]
 
 
+#Ritorna la lettera della camera sinistra
 def get_frame_sx():
+    """Ritorna la lettera della camera sinistra"""
     ret, frame = camera1.read()
     if not ret:
         return "Camera non trovata"
@@ -74,7 +75,9 @@ def get_frame_sx():
     return recognize(model, frame, class_names)
 
 
+#Ritorna la lettera della camera sinistra
 def get_frame_dx():
+    """Ritorna la lettera della camera sinistra"""
     ret, frame = camera2.read()
     if not ret:
         return "Camera non trovata"
@@ -82,7 +85,9 @@ def get_frame_dx():
     return recognize(model, frame, class_names)
 
 
-def get_computation_sx():
+#Ritorna il colore della camera sinistra
+def get_color_sx():
+    """Ritorna il colore della camera sinistra"""
     ret, frame = camera1.read()
     if not ret:
         return "Camera non trovata"
@@ -93,8 +98,6 @@ def get_computation_sx():
     
     portion = frame[y1:y2, x1:x2]
     
-    
-    
     colorFrame = getColors(portion)
     cyp, cxp = getCenter(portion)
     
@@ -111,8 +114,9 @@ def get_computation_sx():
     else:
         return "none"
 
-
-def get_computation_dx():
+#Ritorna il colore della camera sinistra
+def get_color_dx():
+    """Ritorna il colore della camera sinistra"""
     ret, frame = camera2.read()
     if not ret:
         return "Camera non trovata"
@@ -141,11 +145,16 @@ def get_computation_dx():
     else:
         return "none"
     
-    
+#Demo
 if __name__ == "__main__":
     while True:
         try:
-            print(get_computation_sx())
+            print(get_color_sx(), get_color_dx())
+            cv2.waitKey(1)
+            #time.sleep(1)
         except KeyboardInterrupt:
+            cv2.destroyAllWindows()
             print("Stopped by user")
             break
+        
+        

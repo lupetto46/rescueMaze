@@ -18,6 +18,15 @@ void setup() {
  
 }
 
+bool inRange(int val, int rangeMin, int rangeMax) {
+  if(val > rangeMin && val < rangeMax) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
 int colore;
 
 void loop() {
@@ -46,6 +55,9 @@ void loop() {
   Serial.print(" ");
   Serial.println(vb);
 
+  if(inRange(vr, 150, 170) && inRange(vg, 150, 170)  && inRange(vb, 150, 170) ) {
+    Serial.println("Argentato");
+  }
 
-  delay(100);
+  delay(500);
 }
