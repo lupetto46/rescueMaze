@@ -1,6 +1,7 @@
 import cv2
 from keras.models import load_model
 import numpy as np
+import time
 
 print("Getting camera\s")
 camera1 = cv2.VideoCapture(0, cv2.CAP_DSHOW)
@@ -23,6 +24,35 @@ print("starting")
 font = cv2.FONT_ITALIC
 fps = 0
 kernel = np.zeros((420, 640, 3), np.uint8)
+
+
+def getColors(frame, threshb=127, threshg=100, threshr=127, maxVal=255):
+    b,g,r = cv2.split(frame)
+    
+    b = cv2.threshold(b, threshb, maxVal, cv2.THRESH_BINARY)[1]
+    g = cv2.threshold(g, threshg, maxVal, cv2.THRESH_BINARY)[1]
+    r = cv2.threshold(r, threshr, maxVal, cv2.THRESH_BINARY)[1]
+    
+    return cv2.merge((b,g,r))
+
+
+def getCenter(frame):
+    y, x, _ = frame.shape
+    
+    return int(y/2), int(x/2)
+
+
+def getPortion(frame, portion):
+    y, x, _ = frame.shape
+    
+    return int(y/portion), int(x/portion)
+
+
+def bincount_app(a):
+    a2D = a.reshape(-1,a.shape[-1])
+    col_range = (256, 256, 256) # generically : a2D.max(0)+1
+    a1D = np.ravel_multi_index(a2D.T, col_range)
+    return np.unravel_index(np.bincount(a1D).argmax(), col_range)
 
 
 def recognize(model, frame, class_names) -> str:
@@ -50,3 +80,72 @@ def get_frame_dx():
         return "Camera non trovata"
 
     return recognize(model, frame, class_names)
+
+
+def get_computation_sx():
+    ret, frame = camera1.read()
+    if not ret:
+        return "Camera non trovata"
+    cy, cx = getCenter(frame)
+    py, px = getPortion(frame, 10)
+    
+    y1, x1, y2, x2 = cy - int(py/2), cx - int(px/2), cy + int(py/2), cx + int(px/2)
+    
+    portion = frame[y1:y2, x1:x2]
+    
+    
+    
+    colorFrame = getColors(portion)
+    cyp, cxp = getCenter(portion)
+    
+    cv2.rectangle(frame, (cx, cy), (cx, cy), (255,0,0), 4)
+    
+    mostDomColor = np.array(bincount_app(colorFrame))
+    
+    if np.array_equiv(mostDomColor, np.array([0,0,255])):
+        return "red"
+    elif np.array_equiv(mostDomColor, np.array([0,255,255])):
+        return "yellow"
+    elif np.array_equiv(mostDomColor, np.array([0,255,0])):
+        return "green"
+    else:
+        return "none"
+
+
+def get_computation_dx():
+    ret, frame = camera2.read()
+    if not ret:
+        return "Camera non trovata"
+    cy, cx = getCenter(frame)
+    py, px = getPortion(frame, 10)
+    
+    y1, x1, y2, x2 = cy - int(py/2), cx - int(px/2), cy + int(py/2), cx + int(px/2)
+    
+    portion = frame[y1:y2, x1:x2]
+    
+    
+    
+    colorFrame = getColors(portion)
+    cyp, cxp = getCenter(portion)
+    
+    cv2.rectangle(frame, (cx, cy), (cx, cy), (255,0,0), 4)
+    
+    mostDomColor = np.array(bincount_app(colorFrame))
+    
+    if np.array_equiv(mostDomColor, np.array([0,0,255])):
+        return "red"
+    elif np.array_equiv(mostDomColor, np.array([0,255,255])):
+        return "yellow"
+    elif np.array_equiv(mostDomColor, np.array([0,255,0])):
+        return "green"
+    else:
+        return "none"
+    
+    
+if __name__ == "__main__":
+    while True:
+        try:
+            print(get_computation_sx())
+        except KeyboardInterrupt:
+            print("Stopped by user")
+            break
