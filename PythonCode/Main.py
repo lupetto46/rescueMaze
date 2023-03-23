@@ -66,6 +66,14 @@ stat = Status()
 start = time.time()
 foundBlue = False
 
+def PID_f(dist):
+	if 6 < dist < 7:
+		return 40, 40
+	elif dist < 6:
+		return 40, 20
+	elif dist > 7:
+		return 20, 40
+
 while True:
 	try:
 		print("-------------")
@@ -87,28 +95,28 @@ while True:
 		
 		#print(time.time() - start)
 		#start = time.time()
-		pid_val = round(getPid(distDx) * 1.8, 3)
+		pid_val = round(getPid(distDx), 3) * 0.8
 		time_elapsed_change = round(time.time() - start, 2)
 		print("Tempo passato allo scorso cambiamento: ", time_elapsed_change)
 		if stat(pid_val):
 			print("CambiataDirezione")
 			start = time.time()
 		
-		pid_sinistra, pid_destra = round(30 + (pid_val)), round(30 - (pid_val))
+		pid_sinistra, pid_destra = (30 + pid_val), (30 - pid_val)
 		
-		if time_elapsed < 1.5:
+		#if time_elapsed < 1.5:
 		
-			if pid_sinistra > 50:
-				pid_sinistra = 50
-			elif pid_sinistra < 0:
-				pid_sinistra = 10
-			
-			if pid_destra > 50:
-				pid_destra = 50
-			elif pid_destra < 0:
+		if pid_sinistra > 50:
+			pid_sinistra = 50
+		elif pid_sinistra < 0:
+			pid_sinistra = 10
+		
+		if pid_destra > 50:
+			pid_destra = 50
+		elif pid_destra < 0:
 				pid_destra = 10
-		else:
-			pid_sinistra, pid_destra = 30, 30#7B7B7B#7B7B7B
+		#else:
+			#pid_sinistra, pid_destra = 30, 30
 		
 		print("Colore terra: ",colore_terra)
 		# Reazione colore di terra
@@ -127,19 +135,19 @@ while True:
 		
 		#print(os.popen("vcgencmd measure_volts core").read())
 		print("Velocità: ", pid_sinistra, pid_destra, pid_val)
-		
+		distAv = sens.distav(2)
+		print(distAv)
 		if distDx > 25:
 			print("Scelto la destra")
-			while distDx > 25:
-				distDx = sens.distdx(2)
-				print("Girando: ", distDx)
-				sens.avanti(5, 100)
-		elif sens.distav(2) > 20 and not foundBlack:
+			destraFull()
+		elif distAv > 40 and not foundBlack:
 			print("Scelto avanti")
 			sens.avanti(pid_sinistra, pid_destra)
 		elif sens.distsx(2) > 25:
 			print("Scelta la sinistra")
 			sinistraFull()
+		elif distAv < 20:
+			break
 		else:
 			print("Bloccato")
 			while distAv < 40:
