@@ -5,14 +5,13 @@ import os
 import time
 
 print("Getting camera\s")
-camera1 = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-camera2 = cv2.VideoCapture(2, cv2.CAP_DSHOW)
+camera1 = cv2.VideoCapture(0)
+camera2 = cv2.VideoCapture(1)
 
 print("Finished getting camera")
 
 print("Loading model")
-os.chdir("PythonCode")
-model = load_model(os.getcwd()+ "\model\keras_model.h5")
+model = load_model(os.getcwd()+ "/model/keras_model.h5")
 print("Model loaded")
 
 print("Loading class names")
@@ -71,8 +70,17 @@ def get_frame_sx():
     ret, frame = camera1.read()
     if not ret:
         return "Camera non trovata"
-
-    return recognize(model, frame, class_names)
+    frame = frame[::-1]
+    center = getCenter(frame)
+    
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    
+    ret, thresh = cv2.threshold(frame, 127, 255, cv2.THRESH_BINARY)
+    
+    if thresh[center[0], center[1], 0] == 0:
+        return recognize(model, frame, class_names)
+    else:
+        return "none"
 
 
 #Ritorna la lettera della camera sinistra
@@ -81,8 +89,16 @@ def get_frame_dx():
     ret, frame = camera2.read()
     if not ret:
         return "Camera non trovata"
-
-    return recognize(model, frame, class_names)
+    frame = frame[::-1]
+    center = getCenter(frame)
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    
+    ret, thresh = cv2.threshold(frame, 127, 255, cv2.THRESH_BINARY)
+    
+    if thresh[center[0], center[1], 0] == 0:
+        return recognize(model, frame, class_names)
+    else:
+        return "none"
 
 
 #Ritorna il colore della camera sinistra
@@ -91,6 +107,7 @@ def get_color_sx():
     ret, frame = camera1.read()
     if not ret:
         return "Camera non trovata"
+    frame = frame[::-1]
     cy, cx = getCenter(frame)
     py, px = getPortion(frame, 10)
     
@@ -99,9 +116,6 @@ def get_color_sx():
     portion = frame[y1:y2, x1:x2]
     
     colorFrame = getColors(portion)
-    cyp, cxp = getCenter(portion)
-    
-    cv2.rectangle(frame, (cx, cy), (cx, cy), (255,0,0), 4)
     
     mostDomColor = np.array(bincount_app(colorFrame))
     
@@ -120,6 +134,7 @@ def get_color_dx():
     ret, frame = camera2.read()
     if not ret:
         return "Camera non trovata"
+    frame = frame[::-1]
     cy, cx = getCenter(frame)
     py, px = getPortion(frame, 10)
     
@@ -130,10 +145,7 @@ def get_color_dx():
     
     
     colorFrame = getColors(portion)
-    cyp, cxp = getCenter(portion)
-    
-    cv2.rectangle(frame, (cx, cy), (cx, cy), (255,0,0), 4)
-    
+        
     mostDomColor = np.array(bincount_app(colorFrame))
     
     if np.array_equiv(mostDomColor, np.array([0,0,255])):
@@ -144,17 +156,4 @@ def get_color_dx():
         return "green"
     else:
         return "none"
-    
-#Demo
-if __name__ == "__main__":
-    while True:
-        try:
-            print(get_color_sx(), get_color_dx())
-            cv2.waitKey(1)
-            #time.sleep(1)
-        except KeyboardInterrupt:
-            cv2.destroyAllWindows()
-            print("Stopped by user")
-            break
-        
-        
+
