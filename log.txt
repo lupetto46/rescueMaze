@@ -1,0 +1,1382 @@
+-------------
+Distanza destra: 4.88
+Tempo passato allo scorso cambiamento: 0.31
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 34.136 25.864 4.136
+Scelto Avanti
+-------------
+Distanza destra: 5.12
+Tempo passato allo scorso cambiamento: 6.52
+Colore terra: 1
+Velocità: 37.608000000000004 22.392 7.6080000000000005
+Scelto Avanti
+-------------
+Distanza destra: 6.51
+Tempo passato allo scorso cambiamento: 7.52
+Colore terra: 1
+Velocità: 32.104 27.896 2.104
+Scelto Avanti
+-------------
+Distanza destra: 8.91
+Tempo passato allo scorso cambiamento: 8.52
+CambiataDirezioneColore terra: 1
+Velocità: 23.56 36.44 -6.440000000000001
+Scelto Avanti
+-------------
+Distanza destra: 11.04
+Tempo passato allo scorso cambiamento: 1.0
+Colore terra: 1
+Velocità: 16.712 43.288 -13.288
+Scelto Avanti
+-------------
+Distanza destra: 11.17
+Tempo passato allo scorso cambiamento: 1.99
+Colore terra: 1
+Velocità: 17.375999999999998 42.624 -12.624
+Scelto Avanti
+-------------
+Distanza destra: 13.36
+Tempo passato allo scorso cambiamento: 2.98
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 14.56
+Tempo passato allo scorso cambiamento: 3.99
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 23.61
+Tempo passato allo scorso cambiamento: 4.96
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 119.81
+Tempo passato allo scorso cambiamento: 5.96
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 8.78
+Tempo passato allo scorso cambiamento: 0.32
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 24.416 35.584 -5.5840000000000005
+Scelto Avanti
+-------------
+Distanza destra: 8.58
+Tempo passato allo scorso cambiamento: 6.51
+Colore terra: 1
+Velocità: 22.904 37.096000000000004 -7.096
+Scelto Avanti
+-------------
+Distanza destra: 8.33
+Tempo passato allo scorso cambiamento: 7.51
+Colore terra: 1
+Velocità: 23.744 36.256 -6.256
+Scelto Avanti
+-------------
+Distanza destra: 7.42
+Tempo passato allo scorso cambiamento: 8.5
+Colore terra: 1
+Velocità: 27.376 32.624 -2.624
+Scelto Avanti
+-------------
+Distanza destra: 6.56
+Tempo passato allo scorso cambiamento: 9.49
+Colore terra: 1
+Velocità: 29.312 30.688 -0.6880000000000001
+Scelto Avanti
+-------------
+Distanza destra: 5.57
+Tempo passato allo scorso cambiamento: 10.49
+CambiataDirezioneColore terra: 1
+Velocità: 32.144 27.856 2.144
+Scelto Avanti
+-------------
+Distanza destra: 4.03
+Tempo passato allo scorso cambiamento: 0.98
+Colore terra: 1
+Velocità: 37.6 22.4 7.6000000000000005
+Scelto Avanti
+-------------
+Distanza destra: 3.74
+Tempo passato allo scorso cambiamento: 1.95
+Colore terra: 1
+Velocità: 35.68 24.32 5.68
+Scelto Sinistra
+Nuova run-------------
+Distanza destra: 4.98
+Tempo passato allo scorso cambiamento: 0.31
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 33.728 26.272 3.728
+Scelto Avanti
+-------------
+Distanza destra: 4.84
+Tempo passato allo scorso cambiamento: 6.52
+Colore terra: 1
+Velocità: 35.76 24.24 5.760000000000001
+Scelto Avanti
+-------------
+Distanza destra: 5.79
+Tempo passato allo scorso cambiamento: 7.51
+Colore terra: 1
+Velocità: 31.256 28.744 1.2560000000000002
+Scelto Avanti
+-------------
+Distanza destra: 7.29
+Tempo passato allo scorso cambiamento: 8.51
+CambiataDirezioneColore terra: 1
+Velocità: 26.2 33.8 -3.8000000000000003
+Scelto Avanti
+-------------
+Distanza destra: 8.54
+Tempo passato allo scorso cambiamento: 0.99
+Colore terra: 1
+Velocità: 23.464 36.536 -6.5360000000000005
+Scelto Avanti
+-------------
+Distanza destra: 9.79
+Tempo passato allo scorso cambiamento: 1.98
+Colore terra: 1
+Velocità: 19.944 40.056 -10.056000000000001
+Scelto Avanti
+-------------
+Distanza destra: 10.66
+Tempo passato allo scorso cambiamento: 2.97
+Colore terra: 1
+Velocità: 18.112000000000002 41.888 -11.888
+Scelto Avanti
+-------------
+Distanza destra: 13.31
+Tempo passato allo scorso cambiamento: 3.97
+Colore terra: 1
+Velocità: 6.391999999999996 53.608000000000004 -23.608000000000004
+Scelto Avanti
+-------------
+Distanza destra: 8.96
+Tempo passato allo scorso cambiamento: 4.94
+CambiataDirezioneColore terra: 1
+Velocità: 33.616 26.384 3.6159999999999997
+Scelto Avanti
+-------------
+Distanza destra: 7.07
+Tempo passato allo scorso cambiamento: 0.96
+Colore terra: 1
+Velocità: 31.992 28.008 1.9920000000000002
+Scelto Sinistra
+Nuova run
+-------------
+Distanza destra: 6.35
+Tempo passato allo scorso cambiamento: 0.32
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 30.368 29.632 0.36800000000000005
+Scelto Avanti
+-------------
+Distanza destra: 6.31
+Tempo passato allo scorso cambiamento: 6.52
+Colore terra: 1
+Velocità: 30.664 29.336 0.664
+Scelto Avanti
+-------------
+Distanza destra: 6.14
+Tempo passato allo scorso cambiamento: 7.51
+Colore terra: 1
+Velocità: 31.528 28.472 1.528
+Scelto Avanti
+-------------
+Distanza destra: 6.34
+Tempo passato allo scorso cambiamento: 8.51
+Colore terra: 1
+Velocità: 30.184 29.816 0.18400000000000002
+Scelto Avanti
+-------------
+Distanza destra: 5.84
+Tempo passato allo scorso cambiamento: 9.5
+Colore terra: 1
+Velocità: 33.176 26.823999999999998 3.176
+Scelto Avanti
+-------------
+Distanza destra: 7.73
+Tempo passato allo scorso cambiamento: 10.5
+CambiataDirezioneColore terra: 1
+Velocità: 22.672 37.328 -7.328
+Scelto Avanti
+-------------
+Distanza destra: 8.29
+Tempo passato allo scorso cambiamento: 0.99
+Colore terra: 1
+Velocità: 24.256 35.744 -5.744
+Scelto Avanti
+-------------
+Distanza destra: 7.83
+Tempo passato allo scorso cambiamento: 1.98
+Colore terra: 1
+Velocità: 27.624 32.376 -2.3760000000000003
+Scelto Avanti
+-------------
+Distanza destra: 8.2
+Tempo passato allo scorso cambiamento: 3.0
+Colore terra: 1
+Velocità: 24.472 35.528 -5.5280000000000005
+Scelto Sinistra
+-------------
+Distanza destra: 3.78
+Tempo passato allo scorso cambiamento: 7.61
+CambiataDirezioneColore terra: 1
+Velocità: 40.256 19.744 10.256
+Scelto Avanti
+-------------
+Distanza destra: 5.02
+Tempo passato allo scorso cambiamento: 0.99
+Colore terra: 1
+Velocità: 32.208 27.792 2.2079999999999997
+Scelto Avanti
+-------------
+Distanza destra: 8.04
+Tempo passato allo scorso cambiamento: 1.99
+CambiataDirezioneColore terra: 1
+Velocità: 20.488 39.512 -9.512
+Scelto Avanti
+-------------
+Distanza destra: 11.2
+Tempo passato allo scorso cambiamento: 1.01
+Colore terra: 1
+Velocità: 11.887999999999998 48.112 -18.112000000000002
+Scelto Avanti
+-------------
+Distanza destra: 13.05
+Tempo passato allo scorso cambiamento: 2.03
+Colore terra: 1
+Velocità: 9.488 50.512 -20.512
+Scelto Avanti
+-------------
+Distanza destra: 13.87
+Tempo passato allo scorso cambiamento: 3.04
+Colore terra: 1
+Velocità: 8.759999999999998 51.24 -21.240000000000002
+Scelto Avanti
+-------------
+Distanza destra: 10.02
+Tempo passato allo scorso cambiamento: 4.04
+Colore terra: 1
+Velocità: 28.648 31.352 -1.352
+Nuova run
+-------------
+Distanza destra: 4.16
+Tempo passato allo scorso cambiamento: 0.31
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 35.736000000000004 24.264 5.736000000000001
+Scelto Avanti
+-------------
+Distanza destra: 4.25
+Tempo passato allo scorso cambiamento: 6.51
+Colore terra: 1
+Velocità: 37.712 22.288 7.712000000000001
+Scelto Avanti
+-------------
+Distanza destra: 4.2
+Tempo passato allo scorso cambiamento: 7.51
+Colore terra: 1
+Velocità: 38.352000000000004 21.648 8.352
+Scelto Avanti
+-------------
+Distanza destra: 5.19
+Tempo passato allo scorso cambiamento: 8.5
+Colore terra: 1
+Velocità: 33.68 26.32 3.6799999999999997
+Scelto Avanti
+-------------
+Distanza destra: 8.18
+Tempo passato allo scorso cambiamento: 9.49
+CambiataDirezioneColore terra: 1
+Velocità: 21.392 38.608000000000004 -8.608
+Scelto Avanti
+-------------
+Distanza destra: 15.75
+Tempo passato allo scorso cambiamento: 0.99
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 8.7
+Tempo passato allo scorso cambiamento: 1.98
+CambiataDirezioneColore terra: 1
+Velocità: 42.672 17.328 12.672
+Scelto Sinistra
+-------------
+Distanza destra: 14.09
+Tempo passato allo scorso cambiamento: 4.62
+CambiataDirezioneColore terra: 1
+Velocità: 11.399999999999999 48.6 -18.6
+Scelto Avanti
+-------------
+Distanza destra: 16.57
+Tempo passato allo scorso cambiamento: 0.99
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 14.88
+Tempo passato allo scorso cambiamento: 2.01
+Colore terra: 1
+Velocità: 10.536000000000001 49.464 -19.464
+Scelto Avanti
+-------------
+Distanza destra: 13.83
+Tempo passato allo scorso cambiamento: 3.0
+Colore terra: 1
+Velocità: 10.439999999999998 49.56 -19.560000000000002
+Scelto Avanti
+-------------
+Distanza destra: 49.43
+Tempo passato allo scorso cambiamento: 4.0
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 122.17
+Tempo passato allo scorso cambiamento: 8.69
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 146.66
+Tempo passato allo scorso cambiamento: 13.34
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 5.68
+Tempo passato allo scorso cambiamento: 17.97
+CambiataDirezioneColore terra: 1
+Velocità: 32.008 27.992 2.008
+Scelto Avanti
+-------------
+Distanza destra: 21.51
+Tempo passato allo scorso cambiamento: 0.99
+CambiataDirezioneColore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Nuova run
+-------------
+Distanza destra: 7.38
+Tempo passato allo scorso cambiamento: 0.31
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 27.887999999999998 32.112 -2.112
+Scelto Avanti
+-------------
+Distanza destra: 7.42
+Tempo passato allo scorso cambiamento: 6.51
+Colore terra: 1
+Velocità: 27.776 32.224 -2.2239999999999998
+Scelto Avanti
+-------------
+Distanza destra: 6.64
+Tempo passato allo scorso cambiamento: 7.51
+CambiataDirezioneColore terra: 1
+Velocità: 31.544 28.456 1.544
+Scelto Avanti
+-------------
+Distanza destra: 6.03
+Tempo passato allo scorso cambiamento: 0.99
+Colore terra: 1
+Velocità: 32.6 27.4 2.6
+Scelto Avanti
+-------------
+Distanza destra: 5.51
+Tempo passato allo scorso cambiamento: 1.98
+Colore terra: 1
+Velocità: 33.64 26.36 3.64
+Scelto Avanti
+-------------
+Distanza destra: 5.41
+Tempo passato allo scorso cambiamento: 2.97
+Colore terra: 1
+Velocità: 32.856 27.144 2.856
+Scelto Avanti
+-------------
+Distanza destra: 4.98
+Tempo passato allo scorso cambiamento: 3.96
+Colore terra: 1
+Velocità: 34.688 25.311999999999998 4.688000000000001
+Scelto Avanti
+-------------
+Distanza destra: 5.15
+Tempo passato allo scorso cambiamento: 4.97
+Colore terra: 1
+Velocità: 32.832 27.168 2.8320000000000003
+Scelto Avanti
+-------------
+Distanza destra: 5.9
+Tempo passato allo scorso cambiamento: 5.93
+CambiataDirezioneColore terra: 1
+Velocità: 29.576 30.424 -0.42400000000000004
+Scelto Sinistra
+-------------
+Distanza destra: 4.69
+Tempo passato allo scorso cambiamento: 4.61
+CambiataDirezioneColore terra: 1
+Velocità: 34.432 25.567999999999998 4.432
+Scelto Avanti
+-------------
+Distanza destra: 9.21
+Tempo passato allo scorso cambiamento: 0.99
+CambiataDirezioneColore terra: 1
+Velocità: 12.232 47.768 -17.768
+Scelto Avanti
+-------------
+Distanza destra: 15.18
+Tempo passato allo scorso cambiamento: 1.0
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 16.68
+Tempo passato allo scorso cambiamento: 2.01
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 15.34
+Tempo passato allo scorso cambiamento: 3.02
+Colore terra: 1
+Velocità: 7.159999999999997 52.84 -22.840000000000003
+Scelto Avanti
+-------------
+Distanza destra: 17.93
+Tempo passato allo scorso cambiamento: 4.01
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 51.59
+Tempo passato allo scorso cambiamento: 5.0
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+Nuova run
+-------------
+Distanza destra: 7.78
+Tempo passato allo scorso cambiamento: 0.31
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 26.896 33.104 -3.104
+Scelto Avanti
+-------------
+Distanza destra: 7.76
+Tempo passato allo scorso cambiamento: 6.52
+Colore terra: 1
+Velocità: 26.328 33.672 -3.672
+Scelto Avanti
+-------------
+Distanza destra: 7.35
+Tempo passato allo scorso cambiamento: 7.52
+Colore terra: 1
+Velocità: 28.216 31.784 -1.784
+Scelto Avanti
+-------------
+Distanza destra: 6.98
+Tempo passato allo scorso cambiamento: 8.51
+Colore terra: 1
+Velocità: 28.976 31.024 -1.024
+Scelto Avanti
+-------------
+Distanza destra: 6.57
+Tempo passato allo scorso cambiamento: 9.51
+CambiataDirezioneColore terra: 1
+Velocità: 30.056 29.944 0.05600000000000001
+Scelto Avanti
+-------------
+Distanza destra: 6.77
+Tempo passato allo scorso cambiamento: 0.99
+CambiataDirezioneColore terra: 1
+Velocità: 28.08 31.92 -1.92
+Scelto Avanti
+-------------
+Distanza destra: 6.6
+Tempo passato allo scorso cambiamento: 0.99
+Colore terra: 1
+Velocità: 29.376 30.624 -0.6240000000000001
+Scelto Avanti
+-------------
+Distanza destra: 6.02
+Tempo passato allo scorso cambiamento: 1.97
+CambiataDirezioneColore terra: 1
+Velocità: 31.816 28.184 1.816
+Scelto Avanti
+-------------
+Distanza destra: 5.46
+Tempo passato allo scorso cambiamento: 0.96
+Colore terra: 1
+Velocità: 33.208 26.792 3.208
+Scelto Sinistra
+-------------
+Distanza destra: 4.58
+Tempo passato allo scorso cambiamento: 5.58
+Colore terra: 1
+Velocità: 34.704 25.296 4.704
+Scelto Avanti
+-------------
+Distanza destra: 7.0
+Tempo passato allo scorso cambiamento: 6.57
+CambiataDirezioneColore terra: 1
+Velocità: 22.96 37.04 -7.040000000000001
+Scelto Avanti
+-------------
+Distanza destra: 9.67
+Tempo passato allo scorso cambiamento: 1.01
+Colore terra: 1
+Velocità: 15.552 44.448 -14.448
+Scelto Avanti
+-------------
+Distanza destra: 12.78
+Tempo passato allo scorso cambiamento: 2.02
+Colore terra: 1
+Velocità: 6.007999999999999 53.992000000000004 -23.992
+Scelto Avanti
+-------------
+Distanza destra: 12.31
+Tempo passato allo scorso cambiamento: 3.07
+Colore terra: 1
+Velocità: 14.631999999999998 45.368 -15.368000000000002
+Scelto Avanti
+-------------
+Distanza destra: 10.46
+Tempo passato allo scorso cambiamento: 4.07
+Colore terra: 1
+Velocità: 21.808 38.192 -8.192
+Scelto Avanti
+-------------
+Distanza destra: 19.87
+Tempo passato allo scorso cambiamento: 5.06
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Sinistra
+Nuova run
+-------------
+Distanza destra: 8.6
+Tempo passato allo scorso cambiamento: 0.32
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 23.224 36.776 -6.776000000000001
+Scelto Avanti
+-------------
+Distanza destra: 8.59
+Tempo passato allo scorso cambiamento: 6.52
+Colore terra: 1
+Velocità: 22.224 37.776 -7.776000000000001
+Scelto Avanti
+-------------
+Distanza destra: 7.23
+Tempo passato allo scorso cambiamento: 7.51
+Colore terra: 1
+Velocità: 29.792 30.208 -0.20800000000000002
+Scelto Avanti
+-------------
+Distanza destra: 6.38
+Tempo passato allo scorso cambiamento: 8.51
+CambiataDirezioneColore terra: 1
+Velocità: 31.296 28.704 1.2960000000000003
+Scelto Avanti
+-------------
+Distanza destra: 5.43
+Tempo passato allo scorso cambiamento: 1.0
+Colore terra: 1
+Velocità: 34.664 25.336 4.664000000000001
+Scelto Avanti
+-------------
+Distanza destra: 4.85
+Tempo passato allo scorso cambiamento: 1.99
+Colore terra: 1
+Velocità: 35.752 24.247999999999998 5.752000000000001
+Scelto Avanti
+-------------
+Distanza destra: 3.2
+Tempo passato allo scorso cambiamento: 2.99
+Colore terra: 1
+Velocità: 43.872 16.128 13.872
+Scelto Avanti
+-------------
+Distanza destra: 3.48
+Tempo passato allo scorso cambiamento: 3.97
+Colore terra: 1
+Velocità: 38.552 21.448 8.552
+Scelto Avanti
+-------------
+Distanza destra: 4.77
+Tempo passato allo scorso cambiamento: 4.93
+Colore terra: 1
+Velocità: 32.04 27.96 2.04
+Scelto Sinistra
+-------------
+Distanza destra: 7.51
+Tempo passato allo scorso cambiamento: 9.45
+CambiataDirezioneColore terra: 1
+Velocità: 27.528 32.472 -2.472
+Scelto Avanti
+-------------
+Distanza destra: 12.84
+Tempo passato allo scorso cambiamento: 1.0
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 18.33
+Tempo passato allo scorso cambiamento: 2.0
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 18.26
+Tempo passato allo scorso cambiamento: 3.01
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 16.16
+Tempo passato allo scorso cambiamento: 4.02
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 39.99
+Tempo passato allo scorso cambiamento: 5.01
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+Nuova run
+-------------
+Distanza destra: 12.2
+Errore: -0.6000000000000014
+Tempo passato allo scorso cambiamento: 0.63
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 31.232 28.768 1.2320000000000002
+Scelto Avanti
+-------------
+Distanza destra: 12.04
+Errore: 0.11999999999999922
+Tempo passato allo scorso cambiamento: 6.81
+CambiataDirezioneColore terra: 1
+Velocità: 29.448 30.552 -0.5519999999999999
+Scelto Avanti
+-------------
+Distanza destra: 11.43
+Errore: -0.8000000000000007
+Tempo passato allo scorso cambiamento: 0.97
+CambiataDirezioneColore terra: 1
+Velocità: 33.912 26.088 3.912
+Scelto Avanti
+-------------
+Distanza destra: 11.82
+Errore: -0.41999999999999993
+Tempo passato allo scorso cambiamento: 0.97
+CambiataDirezioneColore terra: 1
+Velocità: 29.96 30.04 -0.04000000000000001
+Scelto Avanti
+-------------
+Distanza destra: 12.57
+Errore: -0.16000000000000014
+Tempo passato allo scorso cambiamento: 0.96
+Colore terra: 1
+Velocità: 29.752 30.248 -0.248
+Scelto Avanti
+-------------
+Distanza destra: 13.35
+Errore: 0.75
+Tempo passato allo scorso cambiamento: 1.93
+Colore terra: 1
+Velocità: 26.247999999999998 33.752 -3.7520000000000007
+Scelto Avanti
+-------------
+Distanza destra: 16.07
+Errore: 3.7300000000000004
+Tempo passato allo scorso cambiamento: 2.88
+Colore terra: 1
+Velocità: 14.815999999999999 45.184 -15.184000000000001
+Scelto Avanti
+-------------
+Distanza destra: 14.41
+Errore: 2.5
+Tempo passato allo scorso cambiamento: 3.84
+Colore terra: 1
+Velocità: 27.632 32.368 -2.368
+Scelto Avanti
+-------------
+Distanza destra: 13.74
+Errore: 0.7799999999999994
+Tempo passato allo scorso cambiamento: 4.79
+CambiataDirezioneColore terra: 1
+Velocità: 32.264 27.736 2.2640000000000002
+Scelto 180
+-------------
+Distanza destra: 116.3
+Errore: 100.72
+Tempo passato allo scorso cambiamento: 8.09
+CambiataDirezioneColore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 10.9
+Errore: 0.6100000000000012
+Tempo passato allo scorso cambiamento: 4.51
+CambiataDirezioneColore terra: 1
+Velocità: 44.728 15.271999999999998 14.728000000000002
+Scelto Avanti
+-------------
+Distanza destra: 25.91
+Errore: 14.85
+Tempo passato allo scorso cambiamento: 0.96
+CambiataDirezioneColore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 42.9
+Errore: -6.090000000000003
+Tempo passato allo scorso cambiamento: 4.53
+CambiataDirezioneColore terra: 0
+Velocità: 54.0 6.0 24.0
+Scelto Destra
+-------------
+Distanza destra: 6.77
+Errore: -61.89
+Tempo passato allo scorso cambiamento: 4.51
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 5.8
+Errore: -48.290000000000006
+Tempo passato allo scorso cambiamento: 10.69
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 13.1
+Errore: -0.5999999999999996
+Tempo passato allo scorso cambiamento: 11.65
+CambiataDirezioneColore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 33.79
+Errore: 24.119999999999997
+Tempo passato allo scorso cambiamento: 0.97
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 55.24
+Errore: -9.219999999999992
+Tempo passato allo scorso cambiamento: 5.52
+CambiataDirezioneColore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Destra
+-------------
+Distanza destra: 16.44
+Errore: 10.790000000000001
+Tempo passato allo scorso cambiamento: 4.5
+CambiataDirezioneColore terra: 1
+Velocità: 19.272 40.728 -10.728000000000002
+Scelto Avanti
+-------------
+Distanza destra: 8.0
+Errore: -0.4499999999999993
+Tempo passato allo scorso cambiamento: 0.96
+CambiataDirezioneColore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 10.2
+Errore: 0.4499999999999993
+Tempo passato allo scorso cambiamento: 0.95
+Colore terra: 1
+Velocità: 43.808 16.192 13.808000000000002
+Scelto Avanti
+-------------
+Distanza destra: 6.49
+Errore: -7.84
+Tempo passato allo scorso cambiamento: 1.9
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 6.58
+Errore: -33.7
+Tempo passato allo scorso cambiamento: 2.86
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Sinistra
+-------------
+Distanza destra: 16.37
+Errore: -50.44999999999999
+Tempo passato allo scorso cambiamento: 7.38
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 6.45
+Errore: -2.3999999999999995
+Tempo passato allo scorso cambiamento: 8.35
+CambiataDirezioneColore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 5.74
+Errore: -3.369999999999999
+Tempo passato allo scorso cambiamento: 0.96
+CambiataDirezioneColore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 4.46
+Errore: -5.04
+Tempo passato allo scorso cambiamento: 0.96
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 4.81
+Errore: -2.7800000000000002
+Tempo passato allo scorso cambiamento: 1.91
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 11.05
+Errore: 4.740000000000001
+Tempo passato allo scorso cambiamento: 2.87
+CambiataDirezioneColore terra: 1
+Velocità: 27.68 32.32 -2.32
+Scelto Avanti
+-------------
+Distanza destra: 24.69
+Errore: 16.75
+Tempo passato allo scorso cambiamento: 0.97
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 52.57
+Errore: 46.26
+Tempo passato allo scorso cambiamento: 1.95
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 71.26
+Errore: 61.81
+Tempo passato allo scorso cambiamento: 6.48
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 105.84
+Errore: 79.84
+Tempo passato allo scorso cambiamento: 11.02
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+Nuova run
+-------------
+Distanza destra: 7.96
+Errore: -5.06
+Tempo passato allo scorso cambiamento: 0.63
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 40.376000000000005 19.624 10.376000000000001
+Scelto Avanti
+-------------
+Distanza destra: 8.27
+Errore: 2.1899999999999995
+Tempo passato allo scorso cambiamento: 6.8
+CambiataDirezioneColore terra: 1
+Velocità: 21.976 38.024 -8.024
+Scelto Avanti
+-------------
+Distanza destra: 8.69
+Errore: 2.8
+Tempo passato allo scorso cambiamento: 0.96
+Colore terra: 1
+Velocità: 21.84 38.16 -8.16
+Scelto Avanti
+-------------
+Distanza destra: 9.72
+Errore: 3.5700000000000003
+Tempo passato allo scorso cambiamento: 1.93
+Colore terra: 1
+Velocità: 19.624 40.376000000000005 -10.376000000000001
+Scelto Avanti
+-------------
+Distanza destra: 9.24
+Errore: 3.0700000000000003
+Tempo passato allo scorso cambiamento: 2.88
+Colore terra: 1
+Velocità: 23.56 36.44 -6.440000000000001
+Scelto Avanti
+-------------
+Distanza destra: 19.77
+Errore: 12.34
+Tempo passato allo scorso cambiamento: 3.84
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 6.6
+Errore: -2.6799999999999997
+Tempo passato allo scorso cambiamento: 4.8
+CambiataDirezioneColore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 5.05
+Errore: -6.44
+Tempo passato allo scorso cambiamento: 0.95
+Colore terra: 1
+Velocità: 50.56 9.439999999999998 20.560000000000002
+Scelto Avanti
+-------------
+Distanza destra: 3.46
+Errore: -6.1499999999999995
+Tempo passato allo scorso cambiamento: 1.9
+Colore terra: 1
+Velocità: 40.232 19.768 10.232
+Scelto 180
+Nuova run
+-------------
+Distanza destra: 9.01
+Errore: -0.9800000000000004
+Tempo passato allo scorso cambiamento: 0.63
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 32.648 27.352 2.648
+Scelto Avanti
+-------------
+Distanza destra: 8.81
+Errore: 0.8800000000000008
+Tempo passato allo scorso cambiamento: 6.8
+CambiataDirezioneColore terra: 1
+Velocità: 25.288 34.712 -4.712
+Scelto Avanti
+-------------
+Distanza destra: 8.67
+Errore: 0.25
+Tempo passato allo scorso cambiamento: 0.97
+Colore terra: 1
+Velocità: 27.6 32.4 -2.4000000000000004
+Scelto Avanti
+-------------
+Distanza destra: 8.21
+Errore: -0.7699999999999996
+Tempo passato allo scorso cambiamento: 1.93
+CambiataDirezioneColore terra: 1
+Velocità: 30.792 29.208 0.792
+Scelto Avanti
+-------------
+Distanza destra: 7.98
+Errore: -0.5599999999999987
+Tempo passato allo scorso cambiamento: 0.96
+CambiataDirezioneColore terra: 1
+Velocità: 29.32 30.68 -0.68
+Scelto Avanti
+-------------
+Distanza destra: 7.06
+Errore: -1.79
+Tempo passato allo scorso cambiamento: 0.96
+CambiataDirezioneColore terra: 1
+Velocità: 34.544 25.456 4.544
+Scelto Avanti
+-------------
+Distanza destra: 7.64
+Errore: -1.37
+Tempo passato allo scorso cambiamento: 0.96
+Colore terra: 1
+Velocità: 32.512 27.488 2.5120000000000005
+Scelto Avanti
+-------------
+Distanza destra: 6.92
+Errore: -2.790000000000001
+Tempo passato allo scorso cambiamento: 1.91
+Colore terra: 1
+Velocità: 39.048 20.951999999999998 9.048
+Scelto Avanti
+-------------
+Distanza destra: 6.5
+Errore: -2.5999999999999996
+Tempo passato allo scorso cambiamento: 2.86
+Colore terra: 1
+Velocità: 38.152 21.848 8.152
+Scelto 180
+-------------
+Distanza destra: 10.79
+Errore: 3.6599999999999993
+Tempo passato allo scorso cambiamento: 10.91
+Colore terra: 1
+Velocità: 37.104 22.896 7.104000000000001
+Scelto Avanti
+-------------
+Distanza destra: 9.18
+Errore: -0.14000000000000057
+Tempo passato allo scorso cambiamento: 11.88
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 7.61
+Errore: -2.05
+Tempo passato allo scorso cambiamento: 12.86
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 8.94
+Errore: -3.0700000000000003
+Tempo passato allo scorso cambiamento: 13.83
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 15.31
+Errore: -3.0299999999999994
+Tempo passato allo scorso cambiamento: 14.8
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 64.8
+Errore: 15.14
+Tempo passato allo scorso cambiamento: 15.79
+CambiataDirezioneColore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 8.35
+Errore: -1.2300000000000004
+Tempo passato allo scorso cambiamento: 4.5
+CambiataDirezioneColore terra: 1
+Velocità: 49.328 10.671999999999997 19.328000000000003
+Scelto Avanti
+-------------
+Distanza destra: 22.22
+Errore: 9.459999999999999
+Tempo passato allo scorso cambiamento: 0.97
+CambiataDirezioneColore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 5.1
+Errore: -8.97
+Tempo passato allo scorso cambiamento: 0.96
+CambiataDirezioneColore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 3.8
+Errore: -15.45
+Tempo passato allo scorso cambiamento: 0.96
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 3.34
+Errore: -15.57
+Tempo passato allo scorso cambiamento: 1.92
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 4.59
+Errore: -11.21
+Tempo passato allo scorso cambiamento: 2.88
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 13.55
+Errore: -30.05
+Tempo passato allo scorso cambiamento: 3.85
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 32.81
+Errore: -52.519999999999996
+Tempo passato allo scorso cambiamento: 4.83
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Destra
+-------------
+Distanza destra: 11.08
+Errore: 4.6
+Tempo passato allo scorso cambiamento: 9.33
+Colore terra: 1
+Velocità: 34.752 25.247999999999998 4.752000000000001
+Scelto Avanti
+-------------
+Distanza destra: 6.0
+Errore: -3.6099999999999994
+Tempo passato allo scorso cambiamento: 10.28
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 3.81
+Errore: -6.879999999999999
+Tempo passato allo scorso cambiamento: 11.23
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto 180
+-------------
+Distanza destra: 10.9
+Errore: 3.1900000000000004
+Tempo passato allo scorso cambiamento: 19.28
+Colore terra: 1
+Velocità: 38.28 21.72 8.28
+Scelto Avanti
+-------------
+Distanza destra: 9.13
+Errore: 1.3400000000000007
+Tempo passato allo scorso cambiamento: 20.25
+Colore terra: 1
+Velocità: 48.072 11.928 18.072
+Scelto Avanti
+-------------
+Distanza destra: 10.7
+Errore: 4.35
+Tempo passato allo scorso cambiamento: 21.23
+CambiataDirezioneColore terra: 1
+Velocità: 29.216 30.784 -0.784
+Scelto Avanti
+-------------
+Distanza destra: 16.48
+Errore: 12.47
+Tempo passato allo scorso cambiamento: 0.97
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 20.31
+Errore: 17.32
+Tempo passato allo scorso cambiamento: 1.94
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 20.41
+Errore: 17.62
+Tempo passato allo scorso cambiamento: 2.91
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 19.11
+Errore: 12.85
+Tempo passato allo scorso cambiamento: 3.87
+Colore terra: 1
+Velocità: 22.784 37.216 -7.216
+Scelto Avanti
+-------------
+Distanza destra: 18.79
+Errore: 2.5199999999999996
+Tempo passato allo scorso cambiamento: 4.84
+CambiataDirezioneColore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 26.06
+Errore: -53.44
+Tempo passato allo scorso cambiamento: 0.99
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Destra
+Nuova run
+-------------
+Distanza destra: 6.69
+Errore: -5.739999999999999
+Tempo passato allo scorso cambiamento: 0.63
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 45.519999999999996 14.48 15.52
+Scelto Avanti
+-------------
+Distanza destra: 6.77
+Errore: -4.370000000000001
+Tempo passato allo scorso cambiamento: 6.81
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 9.65
+Errore: 0.5600000000000005
+Tempo passato allo scorso cambiamento: 7.78
+Colore terra: 1
+Velocità: 38.208 21.792 8.208
+Scelto Avanti
+-------------
+Distanza destra: 83.91
+Errore: 76.61999999999999
+Tempo passato allo scorso cambiamento: 8.77
+CambiataDirezioneColore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 17.72
+Errore: 10.959999999999999
+Tempo passato allo scorso cambiamento: 4.52
+Colore terra: 1
+Velocità: 17.944 42.056 -12.056000000000001
+Scelto Avanti
+-------------
+Distanza destra: 60.41
+Errore: 48.879999999999995
+Tempo passato allo scorso cambiamento: 5.51
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 32.79
+Errore: -43.080000000000005
+Tempo passato allo scorso cambiamento: 10.04
+CambiataDirezioneColore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Destra
+-------------
+Distanza destra: 76.75
+Errore: 23.68
+Tempo passato allo scorso cambiamento: 4.55
+CambiataDirezioneColore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 77.4
+Errore: 23.080000000000005
+Tempo passato allo scorso cambiamento: 4.56
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+Nuova run
+-------------
+Distanza destra: 5.81
+Errore: -5.760000000000001
+Tempo passato allo scorso cambiamento: 0.63
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 45.568 14.431999999999999 15.568000000000001
+Scelto Avanti
+-------------
+Distanza destra: 6.3
+Errore: -2.3600000000000003
+Tempo passato allo scorso cambiamento: 6.8
+Colore terra: 1
+Velocità: 43.872 16.128 13.872
+Scelto Avanti
+-------------
+Distanza destra: 8.32
+Errore: 2.04
+Tempo passato allo scorso cambiamento: 7.77
+CambiataDirezioneColore terra: 1
+Velocità: 28.52 31.48 -1.4800000000000002
+Scelto Avanti
+-------------
+Distanza destra: 13.1
+Errore: 9.16
+Tempo passato allo scorso cambiamento: 0.96
+Colore terra: 1
+Velocità: 22.384 37.616 -7.616
+Scelto Avanti
+-------------
+Distanza destra: 17.53
+Errore: 14.400000000000002
+Tempo passato allo scorso cambiamento: 1.93
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 20.37
+Errore: 17.3
+Tempo passato allo scorso cambiamento: 2.89
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 21.87
+Errore: 17.020000000000003
+Tempo passato allo scorso cambiamento: 3.85
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Avanti
+-------------
+Distanza destra: 18.18
+Errore: 9.0
+Tempo passato allo scorso cambiamento: 4.81
+Colore terra: 1
+Velocità: 16.168 43.832 -13.832
+Scelto Avanti
+-------------
+Distanza destra: 71.85
+Errore: 46.86999999999999
+Tempo passato allo scorso cambiamento: 5.79
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 56.93
+Errore: 27.74
+Tempo passato allo scorso cambiamento: 10.31
+Colore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+Nuova run
+-------------
+Distanza destra: 176.65
+Errore: 170.0
+Tempo passato allo scorso cambiamento: 0.68
+Colore terra: 1
+Aspettando 5 secondi
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
+-------------
+Distanza destra: 15.95
+Errore: -67.45
+Tempo passato allo scorso cambiamento: 10.42
+CambiataDirezioneColore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Sinistra
+-------------
+Distanza destra: 5.95
+Errore: -3.9699999999999998
+Tempo passato allo scorso cambiamento: 4.5
+Colore terra: 1
+Velocità: 54.0 6.0 24.0
+Scelto Avanti
+-------------
+Distanza destra: 6.54
+Errore: -0.9699999999999998
+Tempo passato allo scorso cambiamento: 5.46
+Colore terra: 1
+Velocità: 49.576 10.424 19.576
+Scelto Avanti
+-------------
+Distanza destra: 19.85
+Errore: -0.05999999999999872
+Tempo passato allo scorso cambiamento: 6.44
+Colore terra: 1
+Velocità: 53.93600000000001 6.0639999999999965 23.936000000000003
+Scelto Avanti
+-------------
+Distanza destra: 63.71
+Errore: 31.630000000000003
+Tempo passato allo scorso cambiamento: 7.43
+CambiataDirezioneColore terra: 1
+Velocità: 6.0 54.0 -24.0
+Scelto Destra
