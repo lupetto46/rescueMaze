@@ -1,6 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 import Bluetin_Echo as sensor
+import math
 
 GPIO.setmode(GPIO.BCM)
 
@@ -17,6 +18,9 @@ led = 26
 bit1 = 25
 bit2 = 16
 
+bit1nano = 1
+bit2nano = 7
+
 N1 = 12
 N2 = 13
 N3 = 18
@@ -25,6 +29,9 @@ N4 = 19
 sensorDx = sensor.Echo(trigDx, echoDx)
 sensorSx = sensor.Echo(trigSx, echoSx)
 sensorAv = sensor.Echo(trigAv, echoAv)
+
+GPIO.setup(bit1nano, GPIO.OUT)
+GPIO.setup(bit2nano, GPIO.OUT)
 
 GPIO.setup(bit1, GPIO.IN)
 GPIO.setup(bit2, GPIO.IN)
@@ -36,22 +43,33 @@ GPIO.setup(N2, GPIO.OUT)
 GPIO.setup(N3, GPIO.OUT)
 GPIO.setup(N4, GPIO.OUT)
 
-P1 = GPIO.PWM(N1, 400)
-P2 = GPIO.PWM(N2, 400)
-P3 = GPIO.PWM(N3, 400)
-P4 = GPIO.PWM(N4, 400)
+P1 = GPIO.PWM(N1, 50)
+P2 = GPIO.PWM(N2, 50)
+P3 = GPIO.PWM(N3, 50)
+P4 = GPIO.PWM(N4, 50)
 
 P1.start(0)
 P2.start(0)
 P3.start(0)
 P4.start(0)
 
+GPIO.output(bit1nano, False)
+GPIO.output(bit2nano, False)
+
+def accendiLed():
+    GPIO.output(led, True)
+    
+def spegniLed():
+    GPIO.output(led, False)
+
 def ledBlink(iterations=1):
-    for i in range(iterations):
-        GPIO.output(led, True)
+    start = time.time()
+    while time.time() - start < 5: 
+        accendiLed()
         time.sleep(0.3)
-        GPIO.output(led, False)
+        spegniLed()
         time.sleep(0.3)
+    spegniLed()
         
 
 def readNanoCode():
@@ -112,14 +130,37 @@ def distdx(round_float = None):
 
         distance = (time_elapsed * 34300) / 2
     
-    distance = sensorDx.read('cm', 5)
+    distance = sensorDx.read('cm', 2)
     
     if round_float is not None:
         distance = round(distance, round_float)
 
     return distance
 
-    
+
+
+
+def writeToNano(val):
+    if val == 1:
+        GPIO.output(bit1nano, True)
+        GPIO.output(bit2nano, False)
+    elif val == 2:
+        GPIO.output(bit1nano, False)
+        GPIO.output(bit2nano, True)
+    elif val == 3:
+        GPIO.output(bit1nano, True)
+        GPIO.output(bit2nano, True)
+    else:
+        GPIO.output(bit1nano, False)
+        GPIO.output(bit2nano, False)
+    time.sleep(0.1)
+    start = time.time()
+    end = time.time()
+    while readNanoCode() != 3:
+        print("No nano response")
+    GPIO.output(bit1nano, False)
+    GPIO.output(bit2nano, False)
+
 
 def distsx(round_float = None):
     if False:
@@ -151,7 +192,7 @@ def distsx(round_float = None):
     
     return distance
 
-    
+
 
 def stop():
     P1.ChangeDutyCycle(0)
@@ -159,7 +200,6 @@ def stop():
 
     P4.ChangeDutyCycle(0)
     P3.ChangeDutyCycle(0)
-    time.sleep(0.2)
 
 def avanti(destra, sinistra):
     P1.ChangeDutyCycle(destra)
@@ -175,22 +215,35 @@ def indietro(destra, sinistra):
     P3.ChangeDutyCycle(sinistra)
     P4.ChangeDutyCycle(0)
 
-def destra(velocita):
+def destra(destra, sinistra):
     P1.ChangeDutyCycle(0)
-    P2.ChangeDutyCycle(velocita)
+    P2.ChangeDutyCycle(destra)
 
-    P4.ChangeDutyCycle(velocita)
+    P4.ChangeDutyCycle(sinistra)
     P3.ChangeDutyCycle(0)
 
-def sinistra(velocita):
+def sinistra(destra, sinistra):
     P2.ChangeDutyCycle(0)
-    P1.ChangeDutyCycle(velocita)
+    P1.ChangeDutyCycle(destra)
 
-    P3.ChangeDutyCycle(velocita)
+    P3.ChangeDutyCycle(sinistra)
     P4.ChangeDutyCycle(0)
 
 def stopEverything():
+    GPIO.setmode(GPIO.BCM)
     sensorAv.stop()
     sensorDx.stop()
-    sensorSx.stop()
     GPIO.cleanup()
+
+
+
+def muovi(sinistra_, destra_):
+    if sinistra_ >= 0 and destra_ >= 0:
+        avanti(sinistra_, destra_)
+    elif sinistra_ < 0 and destra_ > 0:
+        destra(-1*sinistra_, destra_)
+    elif sinistra_ > 0 and destra_ < 0:
+        sinistra(sinistra_, -1*destra_)
+    elif sinistra_ < 0 and destra_ < 0:
+        indietro(-1*sinistra_, -1*destra_)
+        

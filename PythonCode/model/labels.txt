@@ -1,4 +1,7 @@
-0 S
-1 U
-2 H
-3 None
+0 H
+1 S
+2 U
+3 Red
+4 Yellow
+5 Green
+6 None

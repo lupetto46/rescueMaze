@@ -5,7 +5,7 @@ import os
 import time
 
 print("Getting camera\s")
-camera1 = cv2.VideoCapture(0)
+camera1 = cv2.VideoCapture(-1)
 camera2 = cv2.VideoCapture(1)
 
 print("Finished getting camera")
@@ -69,18 +69,10 @@ def get_frame_sx():
     """Ritorna la lettera della camera sinistra"""
     ret, frame = camera1.read()
     if not ret:
-        return "Camera non trovata"
+        return "Camera non trovata sx"
     frame = frame[::-1]
-    center = getCenter(frame)
     
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    
-    ret, thresh = cv2.threshold(frame, 127, 255, cv2.THRESH_BINARY)
-    
-    if thresh[center[0], center[1], 0] == 0:
-        return recognize(model, frame, class_names)
-    else:
-        return "none"
+    return recognize(model, frame, class_names)
 
 
 #Ritorna la lettera della camera sinistra
@@ -88,17 +80,10 @@ def get_frame_dx():
     """Ritorna la lettera della camera sinistra"""
     ret, frame = camera2.read()
     if not ret:
-        return "Camera non trovata"
+        return "Camera non trovata dx"
     frame = frame[::-1]
-    center = getCenter(frame)
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     
-    ret, thresh = cv2.threshold(frame, 127, 255, cv2.THRESH_BINARY)
-    
-    if thresh[center[0], center[1], 0] == 0:
-        return recognize(model, frame, class_names)
-    else:
-        return "none"
+    return recognize(model, frame, class_names)
 
 
 #Ritorna il colore della camera sinistra
