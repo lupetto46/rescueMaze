@@ -4,31 +4,37 @@ import time
 arduino = serial.Serial(port='COM6', baudrate=9600, timeout=.1)
 
 def printSerial():
-    arduino.write(b'sensoredx: 280#')
-    
+    arduino.write(b'Ciao dal computer')
+
 def readSerial():
     tdata = arduino.read_until('#')
+
     tdata = tdata.decode("utf-8")
+    tdata.strip("\n")
     if tdata != "" and tdata != " " and tdata !="\n":
         return tdata
-    else:
+    else: 
         return "no data"
-    
 
+def send():
+    printSerial()
+    time.sleep(1.1)
+    print(readSerial().strip('#'))
+
+def recieve():
+    print(readSerial().strip('#'))
+    time.sleep(1.1) 
 
 
 
 def main():
-
-    while 1:
+    while True:
         try:
-            
-            printSerial()
-            print(readSerial().strip('#'))
-            time.sleep(1.1)
+            #send()
+            recieve()
         except KeyboardInterrupt:
             break
-        
 
-if __name__ == "__main__":
+
+if name == "main":
     main()
