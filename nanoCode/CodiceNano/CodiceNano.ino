@@ -4,7 +4,7 @@
 
 // Global Vars
 
-DynamicJsonDocument doc(1024);
+StaticJsonDocument<200> doc;
 Madgwick filter;
 const float sensorRate = 104.00;
 int heading;
@@ -16,8 +16,12 @@ void printSerial(String input){
 }
 
 String readSerial(){
-  String readed = Serial.readStringUntil('#');
-	return readed;
+    if(Serial.available() == 0)
+    {
+        return "";
+    }
+    String readed = Serial.readString();
+    return readed;
 }
 
 int getRotation() {
@@ -53,16 +57,20 @@ void setup() {
     }
     // start the filter to run at the sample rate:
     filter.begin(sensorRate);
-    heading = doc['gyro'];
+    doc["gyro"] = 0;
 }
 
+String readed;
+String jsonz;
 
 void loop() {
-  heading = getRotation();
-  doc['gyro'] = heading;
-  String json =  "";
-  serializeJson(doc, Serial);
-  if(heading != -1){
-    printSerial(json);
-  }
+    heading = getRotation();
+    readed = readSerial();
+    jsonz = "";
+    doc["gyro"] = heading;
+    serializeJson(doc, jsonz);
+    if(readed == "get") {
+
+        printSerial(jsonz);
+    }
 }

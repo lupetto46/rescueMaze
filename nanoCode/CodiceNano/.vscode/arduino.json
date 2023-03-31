@@ -1,6 +1,6 @@
 {
-    "board": "arduino:mbed_nano:nano33ble",
     "sketch": "CodiceNano.ino",
-    "output": "out/",
-    "port": "COM4"
+    "output": "build",
+    "board": "arduino:mbed_nano:nano33ble",
+    "port": "COM5"
 }

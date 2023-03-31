@@ -1,5 +1,5 @@
 {
     "board": "arduino:mbed_nano:nano33ble",
     "sketch": "nanoCode\\Sos\\Sos.ino",
-    "port": "COM6"
+    "port": "COM5"
 }

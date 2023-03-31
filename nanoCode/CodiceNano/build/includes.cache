@@ -1,0 +1,52 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE"
+  },
+  {
+    "Sourcefile": "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\sketch\\CodiceNano.ino.cpp",
+    "Include": "ArduinoJson.h",
+    "Includepath": "D:\\User\\Documenti\\Arduino\\libraries\\ArduinoJson\\src"
+  },
+  {
+    "Sourcefile": "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\sketch\\CodiceNano.ino.cpp",
+    "Include": "Arduino_LSM9DS1.h",
+    "Includepath": "D:\\User\\Documenti\\Arduino\\libraries\\Arduino_LSM9DS1\\src"
+  },
+  {
+    "Sourcefile": "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\sketch\\CodiceNano.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\libraries\\Wire"
+  },
+  {
+    "Sourcefile": "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\sketch\\CodiceNano.ino.cpp",
+    "Include": "MadgwickAHRS.h",
+    "Includepath": "D:\\User\\Documenti\\Arduino\\libraries\\Madgwick\\src"
+  },
+  {
+    "Sourcefile": "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\sketch\\CodiceNano.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\User\\Documenti\\Arduino\\libraries\\Arduino_LSM9DS1\\src\\LSM9DS1.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\libraries\\Wire\\Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\User\\Documenti\\Arduino\\libraries\\Madgwick\\src\\MadgwickAHRS.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

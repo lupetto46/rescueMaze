@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "..\\..\\..,..\\..\\..",
+  "builtInToolsFolders": "",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "",
+  "fqbn": "arduino:mbed_nano:nano33ble",
+  "hardwareFolders": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "D:\\User\\Documenti\\Arduino\\libraries",
+  "runtime.ide.version": "10607",
+  "sketchLocation": "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano"
+}

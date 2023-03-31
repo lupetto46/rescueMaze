@@ -2,37 +2,41 @@ import serial
 import json
 import time
 
-arduino = serial.Serial(port='COM4', baudrate=19200, timeout=.1)
+arduino = serial.Serial(port='COM5', baudrate=19200, timeout=.1)
 
 def printSerial(command):
-    arduino.write(bytes(command, "utf-8"))
+    command += '#'
+    arduino.flush()
+    arduino.write(command.encode())
 
 def readSerial():
     tdata = arduino.readline()
 
     tdata = tdata.decode("utf-8")
     if tdata != "" and tdata != " " and tdata !="\n":
-        return tdata
+        bob = json.loads(tdata)
+        return bob
     else: 
-        return "no data"
+        return {'gyro': -1}
 
-def send():
-    printSerial()
-    return readSerial().strip('#')
 
-def recieve():
-    readed = readSerial().splitlines()
-    return readed
+
+def send(command):    
+    printSerial(command)
+    
+
 
 
 
 def main():
+    start = time.time()
+    first = True
     while True:
         try:
-            #send()
-            recieved = recieve()
-            if recieved != -1:
-                print(recieved)
+            inz = input(": ")
+            send(inz)
+            recieved = readSerial()
+            print(recieved)
                 
             
         except KeyboardInterrupt:
