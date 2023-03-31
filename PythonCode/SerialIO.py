@@ -4,37 +4,33 @@ import time
 
 arduino = serial.Serial(port='COM5', baudrate=19200, timeout=.1)
 
-def printSerial(command):
+def printSerial(command: str):
     command += '#'
     arduino.flush()
+    print("sending:", command)
     arduino.write(command.encode())
 
 def readSerial():
     tdata = arduino.readline()
 
     tdata = tdata.decode("utf-8")
-    if tdata != "" and tdata != " " and tdata !="\n":
-        bob = json.loads(tdata)
-        return bob
+    if tdata != "" and tdata != " " and tdata !="\r\n":
+        #bob = json.loads(tdata)
+        return tdata
     else: 
-        return {'gyro': -1}
+        return {'gyro': -2}
 
 
 
-def send(command):    
-    printSerial(command)
     
 
 
 
 
 def main():
-    start = time.time()
-    first = True
     while True:
         try:
-            inz = input(": ")
-            send(inz)
+            printSerial("get")
             recieved = readSerial()
             print(recieved)
                 

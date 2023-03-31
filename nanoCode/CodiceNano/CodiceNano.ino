@@ -16,12 +16,14 @@ void printSerial(String input){
 }
 
 String readSerial(){
-    if(Serial.available() == 0)
-    {
-        return "";
+    if(Serial.available() > 0){
+        String readed = Serial.readStringUntil('#');
+        return readed;
     }
-    String readed = Serial.readString();
-    return readed;
+    else
+    {
+        return "-1";
+    }
 }
 
 int getRotation() {
@@ -29,7 +31,7 @@ int getRotation() {
   float xGyro, yGyro, zGyro;
     
   // values for orientation:
-  float heading;
+  float heading_;
   // check if the IMU is ready to read:
   if (IMU.accelerationAvailable() && IMU.gyroscopeAvailable()) {
   // read accelerometer & gyrometer:
@@ -41,10 +43,10 @@ int getRotation() {
     filter.updateIMU((int)xGyro,(int) yGyro,(int) zGyro,(int) xAcc,(int) yAcc,(int) zAcc);
 
     // print the heading, pitch and roll
-    heading = filter.getYaw();
-    return heading;
+    heading_ = filter.getYaw();
+    return heading_;
   }
-  return -1;
+  return heading;
 }
 
 void setup() {
@@ -70,7 +72,6 @@ void loop() {
     doc["gyro"] = heading;
     serializeJson(doc, jsonz);
     if(readed == "get") {
-
         printSerial(jsonz);
     }
 }

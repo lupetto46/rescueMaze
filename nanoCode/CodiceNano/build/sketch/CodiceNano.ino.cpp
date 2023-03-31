@@ -16,11 +16,11 @@ int heading;
 void printSerial(String input);
 #line 18 "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\CodiceNano.ino"
 String readSerial();
-#line 27 "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\CodiceNano.ino"
+#line 29 "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\CodiceNano.ino"
 int getRotation();
-#line 50 "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\CodiceNano.ino"
+#line 52 "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\CodiceNano.ino"
 void setup();
-#line 66 "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\CodiceNano.ino"
+#line 68 "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\CodiceNano.ino"
 void loop();
 #line 13 "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\CodiceNano.ino"
 void printSerial(String input){
@@ -29,12 +29,14 @@ void printSerial(String input){
 }
 
 String readSerial(){
-    if(Serial.available() == 0)
-    {
-        return "";
+    if(Serial.available() > 0){
+        String readed = Serial.readStringUntil('#');
+        return readed;
     }
-    String readed = Serial.readString();
-    return readed;
+    else
+    {
+        return "-1";
+    }
 }
 
 int getRotation() {
@@ -42,7 +44,7 @@ int getRotation() {
   float xGyro, yGyro, zGyro;
     
   // values for orientation:
-  float heading;
+  float heading_;
   // check if the IMU is ready to read:
   if (IMU.accelerationAvailable() && IMU.gyroscopeAvailable()) {
   // read accelerometer & gyrometer:
@@ -54,10 +56,10 @@ int getRotation() {
     filter.updateIMU((int)xGyro,(int) yGyro,(int) zGyro,(int) xAcc,(int) yAcc,(int) zAcc);
 
     // print the heading, pitch and roll
-    heading = filter.getYaw();
-    return heading;
+    heading_ = filter.getYaw();
+    return heading_;
   }
-  return -1;
+  return heading;
 }
 
 void setup() {
@@ -83,7 +85,6 @@ void loop() {
     doc["gyro"] = heading;
     serializeJson(doc, jsonz);
     if(readed == "get") {
-
         printSerial(jsonz);
     }
 }

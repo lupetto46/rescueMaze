@@ -201,6 +201,38 @@
    "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
    "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
    "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
+   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Interrupts.cpp",
+   "-o",
+   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\Interrupts.cpp.o"
+  ],
+  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Interrupts.cpp"
+ },
+ {
+  "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
+  "arguments": [
+   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4/bin/arm-none-eabi-g++",
+   "-c",
+   "-w",
+   "-g3",
+   "-nostdlib",
+   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/defines.txt",
+   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/cxxflags.txt",
+   "-DARDUINO_ARCH_NRF52840",
+   "-MMD",
+   "-mcpu=cortex-m4",
+   "-mfloat-abi=softfp",
+   "-mfpu=fpv4-sp-d16",
+   "-DARDUINO=10607",
+   "-DARDUINO_ARDUINO_NANO33BLE",
+   "-DARDUINO_ARCH_MBED_NANO",
+   "-DARDUINO_ARCH_MBED",
+   "-DARDUINO_LIBRARY_DISCOVERY_PHASE=0",
+   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
+   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE",
+   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated",
+   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
+   "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
+   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
    "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\USB\\PluggableUSBDevice.cpp",
    "-o",
    "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\USB\\PluggableUSBDevice.cpp.o"
@@ -238,38 +270,6 @@
    "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\Serial.cpp.o"
   ],
   "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Serial.cpp"
- },
- {
-  "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
-  "arguments": [
-   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4/bin/arm-none-eabi-g++",
-   "-c",
-   "-w",
-   "-g3",
-   "-nostdlib",
-   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/defines.txt",
-   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/cxxflags.txt",
-   "-DARDUINO_ARCH_NRF52840",
-   "-MMD",
-   "-mcpu=cortex-m4",
-   "-mfloat-abi=softfp",
-   "-mfpu=fpv4-sp-d16",
-   "-DARDUINO=10607",
-   "-DARDUINO_ARDUINO_NANO33BLE",
-   "-DARDUINO_ARCH_MBED_NANO",
-   "-DARDUINO_ARCH_MBED",
-   "-DARDUINO_LIBRARY_DISCOVERY_PHASE=0",
-   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
-   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE",
-   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated",
-   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
-   "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
-   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
-   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Interrupts.cpp",
-   "-o",
-   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\Interrupts.cpp.o"
-  ],
-  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Interrupts.cpp"
  },
  {
   "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
@@ -393,11 +393,11 @@
    "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
    "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
    "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
-   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\api\\IPAddress.cpp",
+   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\USB\\USBCDC.cpp",
    "-o",
-   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\api\\IPAddress.cpp.o"
+   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\USB\\USBCDC.cpp.o"
   ],
-  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\api\\IPAddress.cpp"
+  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\USB\\USBCDC.cpp"
  },
  {
   "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
@@ -649,11 +649,11 @@
    "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
    "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
    "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
-   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\USB\\USBCDC.cpp",
+   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\api\\IPAddress.cpp",
    "-o",
-   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\USB\\USBCDC.cpp.o"
+   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\api\\IPAddress.cpp.o"
   ],
-  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\USB\\USBCDC.cpp"
+  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\api\\IPAddress.cpp"
  },
  {
   "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
@@ -713,11 +713,11 @@
    "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
    "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
    "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
-   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Tone.cpp",
+   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\pinToIndex.cpp",
    "-o",
-   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\Tone.cpp.o"
+   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\pinToIndex.cpp.o"
   ],
-  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Tone.cpp"
+  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\pinToIndex.cpp"
  },
  {
   "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
@@ -777,11 +777,11 @@
    "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
    "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
    "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
-   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\pinToIndex.cpp",
+   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Tone.cpp",
    "-o",
-   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\pinToIndex.cpp.o"
+   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\Tone.cpp.o"
   ],
-  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\pinToIndex.cpp"
+  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Tone.cpp"
  },
  {
   "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
@@ -814,6 +814,38 @@
    "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\main.cpp.o"
   ],
   "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\main.cpp"
+ },
+ {
+  "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
+  "arguments": [
+   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4/bin/arm-none-eabi-g++",
+   "-c",
+   "-w",
+   "-g3",
+   "-nostdlib",
+   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/defines.txt",
+   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/cxxflags.txt",
+   "-DARDUINO_ARCH_NRF52840",
+   "-MMD",
+   "-mcpu=cortex-m4",
+   "-mfloat-abi=softfp",
+   "-mfpu=fpv4-sp-d16",
+   "-DARDUINO=10607",
+   "-DARDUINO_ARDUINO_NANO33BLE",
+   "-DARDUINO_ARCH_MBED_NANO",
+   "-DARDUINO_ARCH_MBED",
+   "-DARDUINO_LIBRARY_DISCOVERY_PHASE=0",
+   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
+   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE",
+   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated",
+   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
+   "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
+   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
+   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\USB\\USBSerial.cpp",
+   "-o",
+   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\USB\\USBSerial.cpp.o"
+  ],
+  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\USB\\USBSerial.cpp"
  },
  {
   "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
@@ -905,38 +937,6 @@
    "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
    "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
    "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
-   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\USB\\USBSerial.cpp",
-   "-o",
-   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\USB\\USBSerial.cpp.o"
-  ],
-  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\USB\\USBSerial.cpp"
- },
- {
-  "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
-  "arguments": [
-   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4/bin/arm-none-eabi-g++",
-   "-c",
-   "-w",
-   "-g3",
-   "-nostdlib",
-   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/defines.txt",
-   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/cxxflags.txt",
-   "-DARDUINO_ARCH_NRF52840",
-   "-MMD",
-   "-mcpu=cortex-m4",
-   "-mfloat-abi=softfp",
-   "-mfpu=fpv4-sp-d16",
-   "-DARDUINO=10607",
-   "-DARDUINO_ARDUINO_NANO33BLE",
-   "-DARDUINO_ARCH_MBED_NANO",
-   "-DARDUINO_ARCH_MBED",
-   "-DARDUINO_LIBRARY_DISCOVERY_PHASE=0",
-   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
-   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE",
-   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated",
-   "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
-   "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
-   "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
    "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\timer.cpp",
    "-o",
    "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\timer.cpp.o"
@@ -1001,11 +1001,11 @@
    "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
    "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
    "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
-   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\wiring_pulse.cpp",
+   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\wiring_digital.cpp",
    "-o",
-   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\wiring_pulse.cpp.o"
+   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\wiring_digital.cpp.o"
   ],
-  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\wiring_pulse.cpp"
+  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\wiring_digital.cpp"
  },
  {
   "directory": "d:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano",
@@ -1033,10 +1033,10 @@
    "-IC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino/api/deprecated-avr-comp",
    "-iprefixC:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
    "@C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE/includes.txt",
-   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\wiring_digital.cpp",
+   "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\wiring_pulse.cpp",
    "-o",
-   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\wiring_digital.cpp.o"
+   "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\CodiceNano\\build\\core\\wiring_pulse.cpp.o"
   ],
-  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\wiring_digital.cpp"
+  "file": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\wiring_pulse.cpp"
  }
 ]
