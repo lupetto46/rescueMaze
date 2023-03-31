@@ -1,21 +1,22 @@
 #include <Arduino_LSM9DS1.h>
 #include <MadgwickAHRS.h>
 
-// initialize a Madgwick filter:
-Madgwick filter;
-// sensor's sample rate is fixed at 104 Hz:
-const float sensorRate = 104.00;
+// Global Vars
 
-void setup() {
- Serial.begin(9600);
- // attempt to start the IMU:
- if (!IMU.begin()) {
-   Serial.println("Failed to initialize IMU");
-   // stop here if you can't access the IMU:
-   while (true);
- }
- // start the filter to run at the sample rate:
- filter.begin(sensorRate);
+Madgwick filter;
+const float sensorRate = 104.00;
+int heading;
+
+// Funcs
+
+void printSerial(String input){
+  input+="#";
+	Serial.print(input);
+}
+
+String readSerial(){
+  String readed = Serial.readStringUntil('#');
+	return readed;
 }
 
 int getRotation() {
@@ -41,7 +42,18 @@ int getRotation() {
   return -1;
 }
 
-int heading;
+void setup() {
+ Serial.begin(9600);
+ // attempt to start the IMU:
+ if (!IMU.begin()) {
+   Serial.println("Failed to initialize IMU");
+   // stop here if you can't access the IMU:
+   while (true);
+ }
+ // start the filter to run at the sample rate:
+ filter.begin(sensorRate);
+}
+
 
 void loop() {
   heading = getRotation();
