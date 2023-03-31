@@ -3,26 +3,26 @@
     "configurations": [
         {
             "name": "Arduino",
-            "compilerPath": "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\bin\\arm-none-eabi-g++",
+            "compilerPath": "C:\\Users\\Karol\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\bin\\arm-none-eabi-g++",
             "compilerArgs": [
                 "-w",
                 "-nostdlib"
             ],
             "intelliSenseMode": "gcc-x64",
             "includePath": [
-                "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
-                "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE",
-                "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\api\\deprecated",
-                "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\api\\deprecated-avr-comp",
-                "c:\\users\\luphh\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\arm-none-eabi\\include\\c++\\7.2.1",
-                "c:\\users\\luphh\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\arm-none-eabi\\include\\c++\\7.2.1\\arm-none-eabi",
-                "c:\\users\\luphh\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\arm-none-eabi\\include\\c++\\7.2.1\\backward",
-                "c:\\users\\luphh\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\lib\\gcc\\arm-none-eabi\\7.2.1\\include",
-                "c:\\users\\luphh\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\lib\\gcc\\arm-none-eabi\\7.2.1\\include-fixed",
-                "c:\\users\\luphh\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\arm-none-eabi\\include"
+                "C:\\Users\\Karol\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino",
+                "C:\\Users\\Karol\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\variants\\ARDUINO_NANO33BLE",
+                "C:\\Users\\Karol\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\api\\deprecated",
+                "C:\\Users\\Karol\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\api\\deprecated-avr-comp",
+                "c:\\users\\karol\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\arm-none-eabi\\include\\c++\\7.2.1",
+                "c:\\users\\karol\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\arm-none-eabi\\include\\c++\\7.2.1\\arm-none-eabi",
+                "c:\\users\\karol\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\arm-none-eabi\\include\\c++\\7.2.1\\backward",
+                "c:\\users\\karol\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\lib\\gcc\\arm-none-eabi\\7.2.1\\include",
+                "c:\\users\\karol\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\lib\\gcc\\arm-none-eabi\\7.2.1\\include-fixed",
+                "c:\\users\\karol\\appdata\\local\\arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\arm-none-eabi\\include"
             ],
             "forcedInclude": [
-                "C:\\Users\\luphh\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Arduino.h"
+                "C:\\Users\\Karol\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_nano\\4.0.2\\cores\\arduino\\Arduino.h"
             ],
             "cStandard": "c11",
             "cppStandard": "c++11",
@@ -481,8 +481,7 @@
                 "__ATOMIC_ACQ_REL=4",
                 "__ATOMIC_RELEASE=3",
                 "USBCON"
-            ],
-            "compileCommands": "${workspaceFolder}/nanoCode/CodiceNano/out/compile_commands.json"
+            ]
         }
     ]
 }

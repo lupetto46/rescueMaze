@@ -7,7 +7,7 @@
 StaticJsonDocument<200> doc;
 Madgwick filter;
 const float sensorRate = 104.00;
-int heading;
+int degrees;
 // Funcs
 
 void printSerial(String input){
@@ -31,7 +31,7 @@ int getRotation() {
   float xGyro, yGyro, zGyro;
     
   // values for orientation:
-  float heading_;
+  float heading;
   // check if the IMU is ready to read:
   if (IMU.accelerationAvailable() && IMU.gyroscopeAvailable()) {
   // read accelerometer & gyrometer:
@@ -43,10 +43,10 @@ int getRotation() {
     filter.updateIMU((int)xGyro,(int) yGyro,(int) zGyro,(int) xAcc,(int) yAcc,(int) zAcc);
 
     // print the heading, pitch and roll
-    heading_ = filter.getYaw();
-    return heading_;
+    heading= filter.getYaw();
+    return heading;
   }
-  return heading;
+  return degrees;
 }
 
 void setup() {
@@ -62,16 +62,14 @@ void setup() {
     doc["gyro"] = 0;
 }
 
-String readed;
-String jsonz;
-
+    String readed;
 void loop() {
-    heading = getRotation();
+    degrees = getRotation();
     readed = readSerial();
-    jsonz = "";
-    doc["gyro"] = heading;
-    serializeJson(doc, jsonz);
+    String jsonOut = "";
+    doc["gyro"] = degrees;
+    serializeJson(doc, jsonOut);
     if(readed == "get") {
-        printSerial(jsonz);
+        printSerial(jsonOut);
     }
 }
