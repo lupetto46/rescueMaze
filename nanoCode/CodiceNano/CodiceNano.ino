@@ -1,17 +1,18 @@
+#include <ArduinoJson.h>
 #include <Arduino_LSM9DS1.h>
 #include <MadgwickAHRS.h>
 
 // Global Vars
 
+DynamicJsonDocument doc(1024);
 Madgwick filter;
 const float sensorRate = 104.00;
 int heading;
-
 // Funcs
 
 void printSerial(String input){
-  input+="#";
-	Serial.print(input);
+    Serial.flush();
+    Serial.println(input);
 }
 
 String readSerial(){
@@ -43,21 +44,25 @@ int getRotation() {
 }
 
 void setup() {
- Serial.begin(9600);
- // attempt to start the IMU:
- if (!IMU.begin()) {
-   Serial.println("Failed to initialize IMU");
-   // stop here if you can't access the IMU:
-   while (true);
- }
- // start the filter to run at the sample rate:
- filter.begin(sensorRate);
+    Serial.begin(19200);
+    // attempt to start the IMU:
+    if (!IMU.begin()) {
+    Serial.println("Failed to initialize IMU");
+    // stop here if you can't access the IMU:
+    while (true);
+    }
+    // start the filter to run at the sample rate:
+    filter.begin(sensorRate);
+    heading = doc['gyro'];
 }
 
 
 void loop() {
   heading = getRotation();
-  if(!(heading == -1)){
-    Serial.println(heading);
+  doc['gyro'] = heading;
+  String json =  "";
+  serializeJson(doc, Serial);
+  if(heading != -1){
+    printSerial(json);
   }
 }
