@@ -1,0 +1,7 @@
+#line 1 "C:\\Users\\lupet\\Documents\\ProgettiGit\\rescueMaze\\nanoCode\\CodiceNano\\.vscode\\arduino.json"
+{
+    "board": "arduino:mbed_nano:nano33ble",
+    "sketch": "CodiceNano.ino",
+    "output": "out/",
+    "port": "COM4"
+}

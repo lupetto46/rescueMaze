@@ -1,16 +1,16 @@
 import serial
+import json
 import time
 
-arduino = serial.Serial(port='COM6', baudrate=9600, timeout=.1)
+arduino = serial.Serial(port='COM4', baudrate=19200, timeout=.1)
 
-def printSerial():
-    arduino.write(b'Ciao dal computer')
+def printSerial(command):
+    arduino.write(bytes(command, "utf-8"))
 
 def readSerial():
-    tdata = arduino.read_until('#')
+    tdata = arduino.readline()
 
     tdata = tdata.decode("utf-8")
-    tdata.strip("\n")
     if tdata != "" and tdata != " " and tdata !="\n":
         return tdata
     else: 
@@ -18,12 +18,11 @@ def readSerial():
 
 def send():
     printSerial()
-    time.sleep(1.1)
-    print(readSerial().strip('#'))
+    return readSerial().strip('#')
 
 def recieve():
-    print(readSerial().strip('#'))
-    time.sleep(1.1) 
+    readed = readSerial().splitlines()
+    return readed
 
 
 
@@ -31,10 +30,14 @@ def main():
     while True:
         try:
             #send()
-            recieve()
+            recieved = recieve()
+            if recieved != -1:
+                print(recieved)
+                
+            
         except KeyboardInterrupt:
             break
 
 
-if name == "main":
+if __name__ == "__main__":
     main()
