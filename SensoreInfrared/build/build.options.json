@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "../../..,../../..",
+  "builtInToolsFolders": "",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "",
+  "fqbn": "arduino:avr:uno",
+  "hardwareFolders": "/home/luphh/.arduino15/packages",
+  "otherLibrariesFolders": "/home/luphh/Arduino/libraries",
+  "runtime.ide.version": "10607",
+  "sketchLocation": "/home/luphh/Documents/vsCode/Arduino/SensoreInfrared"
+}
