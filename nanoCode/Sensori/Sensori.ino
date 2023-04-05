@@ -121,5 +121,4 @@ void loop() {
     doc["sxAv"] = distSxAv();
     serializeJson(doc, jsonOut);
     printSerial(jsonOut);
-    delay(200);    
 }
