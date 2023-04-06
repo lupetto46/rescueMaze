@@ -91,7 +91,7 @@ int distDxAv() { // DESTRA GUARDA AVANTI A1
 }
 
 int distDtDx() { //DIETRO GUARDA DESTRA A2
-  return getDist(avDx) - 5;
+  return getDist(dtDx) - 5;
 }
 
 int distDtSx() { //DIETRO GUARDA SINISTRA A3

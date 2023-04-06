@@ -1,6 +1,7 @@
 import serial
+import json
 
-arduino = serial.Serial(port='COM5', baudrate=19200, timeout=.1)
+arduino = serial.Serial(port='/dev/ttyACM0', baudrate=19200, timeout=.1)
 
 def printSerial(command: str):
     command += '#'
@@ -14,18 +15,17 @@ def readSerial():
     if dataInput != "" and dataInput != " " and dataInput !="\r\n":
         return dataInput
     else: 
-        return {'gyro': -2}
+        return -1
 
-def main():
-    while True:
-        try:
-            printSerial("get")
-            recieved = readSerial()
-            print(recieved)
-                           
-        except KeyboardInterrupt:
-            break
+def getJson():
+    readed = readSerial()
+    if readed != -1:
+        return json.loads(readed)
 
+def getSensors():
+    recieved = getJson()
+    if recieved == None:
+        return None
+    if recieved != -1:
+        return recieved
         
-if __name__ == "__main__":
-    main()
