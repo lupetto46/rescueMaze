@@ -4,6 +4,11 @@ import RPi_Movement as mov
 import SerialIO as sensors
 import time
 
+def sleep(time_in_seconds: float):
+	start = time.time()
+	while time.time() - start < time_in_seconds:
+		sensors.getSensors()
+
 def getDx(vals: dict):
 	av, dt = vals["avDx"], vals["dtDx"]
 	
@@ -22,6 +27,11 @@ def getAv(vals: dict):
 def getGyro(vals: dict):
 	return vals["gyro"]
 
+def getColor(vals: dict):
+	c, r, g, b = vals["color"]
+	
+	return c, r, g, b
+
 def rotateOf(grades: int):
 	currentGrades = getGyro(sensors.getSensors()) - grades
 	
@@ -33,7 +43,7 @@ def rotateOf(grades: int):
 	
 	grad = getGyro(sensors.getSensors())
 	
-	offSet =4
+	error =4
 	if grades < 0:
 		print("Sinistra")
 		mov.muovi(-10, 10)
@@ -41,8 +51,9 @@ def rotateOf(grades: int):
 		print("Destra")
 		mov.muovi(10, -10)
 	
-	while not (currentGrades - offSet < grad < currentGrades + offSet):
+	while not (currentGrades - error < grad < currentGrades + error):
 		grad = getGyro(sensors.getSensors())
+		print(currentGrades, grad)
 	
 	mov.muovi(0, 0)
 	
@@ -52,34 +63,58 @@ gyroOffset = getGyro(vals)
 
 maxOut = 20
 	
-pid = PID(1, 0.1, 0.05, setpoint=4, output_limits=(-maxOut, maxOut))
-pid.tunings = (7.0, 0.4, 2.0)
+pid = PID(1, 0.1, 0.05, setpoint=6, output_limits=(-maxOut, maxOut))
+#7.0, 0.4, 2.0
+pid.tunings = (7.0, 0.4, 0.5)
 print("Starting")
 
+print(getColor(vals))
+while True:
+	try:
+		straightDegree = vals["gyro"]
+		offset = straightDegree - vals["gyro"]
+		break
+	except:
+		pass
 
 
 while True:
 	try:
+		start = time.time()
 		vals = sensors.getSensors()
+		#print(vals)
+		offset = straightDegree - vals["gyro"]
 		av, dt = getDx(vals)
-		print("Av:", av)
-		pidVal = pid(av)
-
-		dx, sx = 20 + pidVal, 20 - pidVal
-
-		print("Velictà ruote:",dx, sx)
-		
-		
-		if getDx(vals)[0] > 10 and getDx(vals)[1] > 10:
-			time.sleep(0.3)
+		valForPid = (av+dt) / 2
+		pidVal = pid(valForPid)
+		print(valForPid)
+		# Controllo muri
+		if getDx(vals)[0] > 15 and getDx(vals)[1] > 15: # Destra
+			mov.muovi(20, 20)
+			sleep(0.2)
 			rotateOf(90)
+			straightDegree = sensors.getSensors()["gyro"]
 			mov.muovi(40, 40)
-			time.sleep(1)
-		elif getAv(vals)[0] < 8 and getAv(vals)[1] < 8:
+			sleep(1)
+			pid = PID(1, 0.1, 0.05, setpoint=4, output_limits=(-maxOut, maxOut))
+			#7.0, 0.4, 2.0
+			pid.tunings = (7.0, 0.4, 1.0)
+		elif getAv(vals)[0] < 8 and getAv(vals)[1] < 8: # Muro avanti
+			mov.muovi(0, 0)
+			sleep(0.4)
 			mov.muovi(0, 0)
 			rotateOf(-90)
+			straightDegree = sensors.getSensors()["gyro"]
+			mov.muovi(40, 40)
+			sleep(1)
+			pid = PID(1, 0.1, 0.05, setpoint=4, output_limits=(-maxOut, maxOut))
+			#7.0, 0.4, 2.0
+			pid.tunings = (7.0, 0.4, 1.0)
+		else:
+			sx, dx = 20 + pidVal, 20 - pidVal
+			mov.muovi(sx, dx)
 		
-		mov.muovi(dx, sx)
+		#print("Time:", time.time() - start)
 	except KeyboardInterrupt:
 		mov.muovi(0, 0)
 		break
