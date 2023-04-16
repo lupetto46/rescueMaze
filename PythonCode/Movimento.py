@@ -95,10 +95,6 @@ class every:
 		else:
 			return self.prevNum
 
-
-def allinea(sx, dx):
-	return sx == dx
-
 def ruotaDestra():
 	print("Destra")
 	mov.muovi(20, 20)
