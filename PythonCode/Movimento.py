@@ -4,6 +4,21 @@ import CameraLib as cam
 import SerialIO as sensors
 import time
 
+#Vars
+
+vals = sensors.getSensors()
+
+maxOut = 20
+setpoint = 5
+	
+pid = PID(1, 0.1, 0.05, setpoint=setpoint, output_limits=(-maxOut, maxOut))
+#7.0, 0.4, 2.0
+pid.tunings = (7.0, 0.4, 0.9)
+imgT = cam.imageTaker(2.6)
+
+print("Starting")
+
+#Functions
 def sleep(time_in_seconds: float):
 	start = time.time()
 	while time.time() - start < time_in_seconds:
@@ -56,19 +71,7 @@ def rotateOf(grades: int):
 		#print(currentGrades, grad)
 	
 	mov.muovi(0, 0)
-	
-	
-vals = sensors.getSensors()
-
-maxOut = 20
-setpoint = 5
-	
-pid = PID(1, 0.1, 0.05, setpoint=setpoint, output_limits=(-maxOut, maxOut))
-#7.0, 0.4, 2.0
-pid.tunings = (7.0, 0.4, 0.9)
-print("Starting")
-
-
+ 
 def controlloMassimo(val1, val2):
 	if val1 > val2:
 		return -1
@@ -103,6 +106,7 @@ def ruotaDestra():
 	rotateOf(60)
 	start = time.time()
 	while time.time() - start < 1.8:
+		imgT.takeImg()
 		allinea()
 	
 def ruotaSinistra():
@@ -120,6 +124,7 @@ def ruotaSinistra():
 	if not notFound:
 		imgT.setDelay()
 	while time.time() - start < 1.8:
+		imgT.takeImg()
 		allinea()
 
 def allinea():
@@ -167,10 +172,6 @@ def spara(num: int):
 			print("got response")
 			break
 
-
-
-
-
 def findLetter():
 	letter, conf = imgT(debug=True)
 	
@@ -206,8 +207,8 @@ def checkWall(bypass= False):
 		return True
 	else:
 		return False
-
-imgT = cam.imageTaker(2.6)
+	
+# Starting
 
 while True:
 	try:

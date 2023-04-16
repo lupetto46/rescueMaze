@@ -1,6 +1,8 @@
 #include <ArduinoJson.h>
 #include <Arduino_LSM9DS1.h>
 #include <MadgwickAHRS.h>
+#include <Wire.h>
+#include "Adafruit_TCS34725.h"
 
 
 #define avDx A0
@@ -10,7 +12,7 @@
 #define dxAv A1
 #define sxAv A7
 // Global Vars
-
+Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_50MS, TCS34725_GAIN_4X);
 StaticJsonDocument<200> doc;
 Madgwick filter;
 const float sensorRate = 104.00;
@@ -67,6 +69,12 @@ void setup() {
     // stop here if you can't access the IMU:
     while (true);
     }
+    if (tcs.begin()) {                                              //if the sensor starts correctly
+    Serial.println("Found sensor");                               //print the happy message
+    } else {                                                        //if the sensor starts incorrectly
+      Serial.println("No TCS34725 found ... check your connections");//print the not so happy message
+      while (1); // halt!
+    }
     // start the filter to run at the sample rate:
     filter.begin(sensorRate);
     doc["gyro"] = 0;
@@ -109,16 +117,28 @@ int distSxAv() { //SINISTRA GUARDA AVANTI A7
 
 String readed;
 void loop() {
+  uint16_t c = tcs.read16(TCS34725_CDATAL);
+  uint16_t r = tcs.read16(TCS34725_RDATAL);
+  uint16_t g = tcs.read16(TCS34725_GDATAL);
+  uint16_t b = tcs.read16(TCS34725_BDATAL);
+
+
+
+
   degrees = getRotation();
-    readed = readSerial();
-    String jsonOut = "";
-    doc["gyro"] = degrees;
-    doc["avDx"] = distAvDx();
-    doc["dtDx"] = distDtDx();
-    doc["avSx"] = distAvSx();
-    doc["dtSx"] = distDtSx();
-    doc["dxAv"] = distDxAv();
-    doc["sxAv"] = distSxAv();
-    serializeJson(doc, jsonOut);
-    printSerial(jsonOut);
+  readed = readSerial();
+  String jsonOut = "";
+  doc["gyro"] = degrees;
+  doc["color"][0] = c;
+  doc["color"][1] = r;
+  doc["color"][2] = g;
+  doc["color"][3] = b;
+  doc["avDx"] = distAvDx();
+  doc["dtDx"] = distDtDx();
+  doc["avSx"] = distAvSx();
+  doc["dtSx"] = distDtSx();
+  doc["dxAv"] = distDxAv();
+  doc["sxAv"] = distSxAv();
+  serializeJson(doc, jsonOut);
+  printSerial(jsonOut);
 }

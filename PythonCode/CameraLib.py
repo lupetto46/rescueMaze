@@ -76,5 +76,8 @@ class imageTaker:
 
     def setDelay(self):
             self.prevTime = time.time()
+    
+    def takeImg(self):
+        self.capture.read()
 
 

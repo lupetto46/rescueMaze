@@ -1,0 +1,7 @@
+#line 1 "D:\\User\\Documenti\\ClonedGitRepos\\rescueMaze\\nanoCode\\RGBSensor\\.vscode\\arduino.json"
+{
+    "sketch": "RGBSensor.ino",
+    "output": "build",
+    "board": "arduino:mbed_nano:nano33ble",
+    "port": "COM5"
+}
