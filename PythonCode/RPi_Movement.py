@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BCM)
 
 GPIO.setwarnings(False)
 
-led = 26
+led = 23
 #Motori destra
 N1 = 12
 N2 = 13
@@ -38,7 +38,12 @@ def accendiLed():
 def spegniLed():
     GPIO.output(led, False)
 
-
+def lampeggiaLed(volte: int):
+    for i in range(volte):
+        accendiLed()
+        time.sleep(0.4)
+        spegniLed()
+        time.sleep(0.4)
 
 def stop():
     P1.ChangeDutyCycle(0)

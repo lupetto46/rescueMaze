@@ -1,6 +1,6 @@
 from simple_pid import PID
 import RPi_Movement as mov
-#import CameraLib as cam
+import CameraLib as cam
 import SerialIO as sensors
 import time
 
@@ -43,7 +43,7 @@ def rotateOf(grades: int):
 	
 	grad = getGyro(sensors.getSensors())
 	
-	error = 8
+	error = 10
 	if grades < 0:
 		print("Sinistra")
 		mov.muovi(-15, 15)
@@ -59,24 +59,14 @@ def rotateOf(grades: int):
 	
 	
 vals = sensors.getSensors()
-gyroOffset = getGyro(vals)
 
 maxOut = 20
-setpoint = 3
+setpoint = 5
 	
 pid = PID(1, 0.1, 0.05, setpoint=setpoint, output_limits=(-maxOut, maxOut))
 #7.0, 0.4, 2.0
-pid.tunings = (7.0, 0.4, 0.5)
+pid.tunings = (7.0, 0.4, 0.9)
 print("Starting")
-
-print(getColor(vals))
-while True:
-	try:
-		straightDegree = vals["gyro"]
-		offset = straightDegree - vals["gyro"]
-		break
-	except:
-		pass
 
 
 def controlloMassimo(val1, val2):
@@ -105,7 +95,6 @@ class every:
 		else:
 			return self.prevNum
 
-ev = every(10)
 
 def allinea(sx, dx):
 	return sx == dx
@@ -115,65 +104,168 @@ def ruotaDestra():
 	mov.muovi(20, 20)
 	sleep(0.4)
 	mov.muovi(0, 0)
-	rotateOf(90)
-	mov.muovi(20, 20)
-	sleep(1.8)
+	rotateOf(60)
+	start = time.time()
+	while time.time() - start < 1.8:
+		allinea()
 	
 def ruotaSinistra():
 	mov.muovi(0, 0)
 	sleep(0.1)
 	mov.muovi(-20, -20)
-	sleep(0.5)
-	rotateOf(-90)
-	mov.muovi(20, 20)
-	sleep(1.8)
+	sleep(0.3)
+	rotateOf(-60)
+	notFound = False
+	for i in range(100):
+		if checkWall(bypass = True):
+			break
+	else:
+		notFound = True
+	if not notFound:
+		imgT.setDelay()
+	while time.time() - start < 1.8:
+		allinea()
+
+def allinea():
+	if av > 6 and dt < 6:
+		pid = PID(1, 0.1, 0.05, setpoint=setpoint, output_limits=(-maxOut, maxOut))
+		#7.0, 0.4, 2.0
+		pid.tunings = (7.0, 0.4, 2.0)
+		pidVal = pid(av)
+		sx, dx = 20 + pidVal, 20 - pidVal
+	else:
+		if av <= 10:
+			pidVal = pid(av)
+			sx, dx = 20 + pidVal, 20 - pidVal
+		elif dt <= 10:
+			pidVal = pid(dt)
+			sx, dx = 20 - pidVal, 20 + pidVal
+		elif dt > 10 and av > 10:
+			mov.muovi(30, 10)
+			sleep(0.4)
+		else:
+			sx, dx = 20, 20
 
 def getSensors():
 	valsLoc = sensors.getSensors()
 			
 	return valsLoc
 
+def getColor(vals: dict):
+	lux, r,g,b = vals["color"]
+	
+	if lux < 2000:
+		return 2 #Nro
+	elif lux < 3000:
+		return 1 #Blu
+	else:
+		return 0 #Bianco
+
+
+def spara(num: int):
+	sensors.printSerial(str(num))
+	while True:
+		sens = sensors.readSerial()
+		#print(sens)
+		if sens == "F\r\n":
+			print("got response")
+			break
+
+
+
+
+
+def findLetter():
+	letter, conf = imgT(debug=True)
+	
+	if letter:
+		return letter
+	else:
+		return "None"
+		
+def checkWall(bypass= False):
+	let = findLetter()
+	
+	mov.muovi(0, 0)
+	
+	print(let)
+	
+	if let == "Red":
+		mov.lampeggiaLed(2)
+		spara(3)
+		if not bypass:
+			imgT.setDelay()
+		return True
+	elif let == "S":
+		mov.lampeggiaLed(2)
+		spara(1)
+		if not bypass:
+			imgT.setDelay()
+		return True
+	elif let == "H":
+		mov.lampeggiaLed(2)
+		spara(3)
+		if not bypass:
+			imgT.setDelay()
+		return True
+	else:
+		return False
+
+imgT = cam.imageTaker(2.6)
+
 while True:
 	try:
 		start = time.time()
 		vals = getSensors()
 		#print(vals)
-		offset = straightDegree - vals["gyro"]
 		av, dt = getDx(vals)
-		controllo = ev(controlloMassimo(dt, av))
 		#print(valForPid)
 		# Controllo muri
 		print(vals)
+		st = time.time()
+		checkWall()
+		print("time:", time.time() - st)
 		
-		if (getDx(vals)[0] < 12 and getDx(vals)[1] < 12) and (getAv(vals)[0] < 1 and getAv(vals)[1] < 1) and (getSx(vals)[0] < 12 and getSx(vals)[1] < 12): # Tutti Muri
+		
+		if (getDx(vals)[0] < 12 and getDx(vals)[1] < 12) and (getAv(vals)[0] < 3 and getAv(vals)[1] < 3) and (getSx(vals)[0] < 12 and getSx(vals)[1] < 12): # Tutti Muri
 			mov.muovi(0, 0)
-			sleep(0.1)
-			mov.muovi(-20, -20)
-			sleep(0.5)
-			rotateOf(180)
+			rotateOf(-60)
+			for i in range(100):
+				if checkWall(bypass = True):
+					break
+			rotateOf(-60)
+			checkWall()
 		elif getDx(vals)[0] > 15 and getDx(vals)[1] > 15: # Destra
 			ruotaDestra()
 		elif (getAv(vals)[0] <= 1 and getAv(vals)[1] <= 1): # Muro avanti
 			ruotaSinistra()
 		else:
 			#print(controllo)
-			if setpoint - 3 < av < setpoint + 3:
-				pass 
-			if controllo == 1 and av <= 15:
+			
+			if av > 6 and dt < 6:
+				pid = PID(1, 0.1, 0.05, setpoint=setpoint, output_limits=(-maxOut, maxOut))
+				#7.0, 0.4, 2.0
+				pid.tunings = (7.0, 0.4, 2.0)
 				pidVal = pid(av)
 				sx, dx = 20 + pidVal, 20 - pidVal
-			elif controllo == -1 and dt <= 15:
-				pidVal = pid(dt)
-				sx, dx = 20 - pidVal, 20 + pidVal
 			else:
-				pidVal = pid(av)
-				sx, dx = 20 + pidVal, 20 - pidVal
+				if av <= 10:
+					pidVal = pid(av)
+					sx, dx = 20 + pidVal, 20 - pidVal
+				elif dt <= 10:
+					pidVal = pid(dt)
+					sx, dx = 20 - pidVal, 20 + pidVal
+				elif dt > 10 and av > 10:
+					mov.muovi(30, 10)
+					sleep(0.4)
+				else:
+					sx, dx = 20, 20
 			
 			mov.muovi(sx, dx)
-		
 		
 		
 		#print("Time:", time.time() - start)
 	except KeyboardInterrupt:
 		mov.muovi(0, 0)
+		cv2.destroyAllWindows()
 		break

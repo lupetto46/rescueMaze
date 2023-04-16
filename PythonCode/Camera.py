@@ -1,15 +1,21 @@
+import CameraLib as cam
 import cv2
 
-camera = cv2.VideoCapture(0)
+
+def findLetter():
+	letter, conf = imgT()
+	
+	if letter:
+		return letter
+	else:
+		return "None"
 
 while True:
-	ret, frame = camera.read()
-	frame = frame[::-1]
 	
-	cv2.imshow("frame", frame)
-	
-	
+	print(findLetter())
+
 	key = cv2.waitKey(1)
 	if key == ord("q"):
 		cv2.destroyAllWindows()
 		break
+	
